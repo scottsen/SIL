@@ -25,7 +25,9 @@ Brittle reasoning:
  chains of inference cannot be inspected, validated, or reproduced.
 
 Hallucinations:
- outputs can be fluent while ungrounded, because there is no semantic contract enforcing correctness.
+ outputs can be fluent while ungrounded, because there is no semantic contract[^1] enforcing correctness.
+
+[^1]: A semantic contract specifies signatures, invariants, provenance requirements, and reproducibility guarantees binding an operator or transformation. See Technical Charter §7 and Glossary.
 
 Weak memory and state:
  systems forget, fragment context, and cannot carry durable semantic continuity across tasks or time.

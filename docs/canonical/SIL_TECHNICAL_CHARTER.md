@@ -402,7 +402,7 @@ resolve schema by (schema_id, version)
 
 traverse provenance: backward (inputs) and forward (derived)
 
-fetch workflow execution trace by workflow identifier
+fetch workflow execution trace by workflow identifier and version
 
 fetch operator invocation history by operator id
 
@@ -541,6 +541,8 @@ stable operator application identity for replay/inspection
 ## 7. Operator Model
 
 7.1 Operator signatures
+
+Every operator operates under a semantic contract (see Glossary).
 
 Every operator MUST declare:
 
@@ -706,6 +708,20 @@ explicit dependencies and execution order constraints
 explicit artifact inputs/outputs
 
 required state snapshot references or snapshot policy
+
+Workflow versioning
+
+Workflows MUST have a version identifier.
+
+Workflow versions MUST be:
+
+immutable once committed to semantic memory
+
+referenced in all provenance records from workflow executions
+
+resolvable for replay operations against historical workflow definitions
+
+Workflow schema changes (operator additions/removals, dependency changes, artifact binding changes) MUST increment workflow version.
 
 9.2 Agent lifecycle
 
@@ -1005,7 +1021,7 @@ Breaking changes MUST include migration rules and deprecation phases.
 
 14.1 Semantic versioning
 
-Schemas, operators, and domain modules MUST use semantic versioning:
+Schemas, operators, workflows, and domain modules MUST use semantic versioning:
 
 MAJOR: breaking semantic changes
 
