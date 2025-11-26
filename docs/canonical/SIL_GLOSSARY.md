@@ -186,6 +186,17 @@ A contract defining the expected stability of outputs for a given operator or en
 
 A versioned definition of the structure, fields, allowed relations, invariants, and types of a semantic object or USIR pattern.
 
+### **Semantic Contract**
+
+A complete specification binding an operator, transformation, or system component, consisting of:
+- **Signature**: input/output types, arity, required parameters
+- **Invariants**: preconditions, postconditions, preserved properties
+- **Provenance requirements**: emission rules, completeness guarantees
+- **Reproducibility guarantees**: deterministic, bounded, or non-reproducible
+- **Effects**: scope of mutations, side effects on semantic memory
+
+All operators, domain modules, and engines operate under semantic contracts. Specialized contracts (lowering/lifting, reproducibility) are instances of this pattern.
+
 ### **Semantic Object**
 
 Any object stored in semantic memory, compliant with a schema, versioned, typed, and linked via provenance.
@@ -244,4 +255,4 @@ A stable pair consisting of (id, version) used for semantic objects, schemas, op
 
 ### **Workflow**
 
-A structured operator graph with explicit dependencies, execution semantics, artifact bindings, and replay contracts.
+A versioned, structured operator graph with explicit dependencies, execution semantics, artifact bindings, and replay contracts. Workflow versions are immutable once committed and referenced in all execution provenance.
