@@ -1,11 +1,3 @@
-Here is the **SIL Glossary** — the canonical, formal, concise vocabulary list for the Semantic Infrastructure Lab and the Semantic OS.
-
-It is written to match the tone and precision of the Charter and Manifesto.
-No hype. No metaphors. No narrative.
-Only definitions that clarify how concepts are used within SIL.
-
----
-
 # **SIL Glossary (v1)**
 
 **Canonical definitions for the Semantic Operating System and its components.**
