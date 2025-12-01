@@ -31,6 +31,8 @@ Layer 0: Semantic Memory      ← Knowledge graphs, provenance, persistence
 
 **Want the full architecture?** Read the detailed layer descriptions below ↓
 
+> 💡 **New to SIL terminology?** Keep the [Glossary](./SIL_GLOSSARY.md) open in another tab.
+
 ---
 
 ## Overview

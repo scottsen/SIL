@@ -100,7 +100,7 @@ Interpretability is first-class
 
 Systems should expose internal structure and reasoning paths—not conceal them behind opaque heuristics.
 
-These commitments are not philosophical decoration. They are engineering constraints.
+These commitments are not philosophical decoration. They are engineering constraints. **[See SIL Principles →](./SIL_PRINCIPLES.md)** for how they guide system design.
 
 ## 3. Lineage — Computation as Representation and Transformation
 
@@ -319,7 +319,7 @@ Operator Composition Across Domains
 
 When operators are explicit and typed, workflows become composable: CAD → simulation → optimization → analysis becomes a sequence of inspectable transformations rather than a chain of opaque tool invocations.
 
-SIM exists partly to make these structures navigable and testable.
+The Semantic Interaction Model (SIM) - the human interface layer of the Semantic OS - exists partly to make these structures navigable and testable.
 
 ## 9. Openness and Stewardship
 
@@ -406,3 +406,27 @@ We make reasoning traceable.
 We build structures that last.
 
 That is the work.
+
+---
+
+## Related Reading
+
+**If you want to understand the architecture:**
+- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) - The 6-layer stack in detail
+- [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - Universal patterns across all projects
+- [Technical Charter](./SIL_TECHNICAL_CHARTER.md) - Formal specification (45 min read)
+
+**If you want to see it in action:**
+- [Project Index](../../projects/PROJECT_INDEX.md) - All 11 projects explained
+- [Tools Documentation](../tools/README.md) - Production systems with economic impact data
+- [Quickstart](../QUICKSTART.md) - Try reveal in 10 minutes
+
+**If you want deeper principles:**
+- [Design Principles](./SIL_PRINCIPLES.md) - The 14 constraints that guide all work
+- [Stewardship Manifesto](./SIL_STEWARDSHIP_MANIFESTO.md) - How SIL is governed
+- [Founder's Letter](./FOUNDERS_LETTER.md) - Personal context and lab purpose
+
+**If you want research depth:**
+- [RAG Paper](../research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md) - Semantic manifold transport framework
+- [Agent-Help Standard](../research/AGENT_HELP_STANDARD.md) - Progressive disclosure for agents
+- [Research Agenda Year 1](./SIL_RESEARCH_AGENDA_YEAR1.md) - Near-term research direction

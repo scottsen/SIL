@@ -21,6 +21,8 @@ This is the **Rosetta Stone** for SIL architecture. It:
 
 **Read this first** before diving into individual project docs.
 
+> 💡 **New to SIL terminology?** Keep the [Glossary](../canonical/SIL_GLOSSARY.md) open in another tab.
+
 ---
 
 ## 🧭 Who Should Read This & When

@@ -92,6 +92,22 @@ Schema and operator longevity matters more than short-term convenience or trends
 
 ---
 
+## **Why These Principles Matter**
+
+**For Researchers:**
+These principles define what "good" semantic infrastructure looks like. They're constraints that ensure SIL systems remain interpretable, composable, and verifiable over decades—not just demos that work once.
+
+**For Developers:**
+They explain why SIL systems behave the way they do. When you wonder "Why does this require explicit types?" or "Why can't I just use a heuristic here?", these principles provide the answer. They're not bureaucracy—they're the invariants that make composition possible.
+
+**For Organizations:**
+They predict how SIL tools will compose with your existing systems. Tools built on these principles don't create integration nightmares—they expose structure, track provenance, and fail explicitly rather than silently corrupting downstream data.
+
+**The Core Promise:**
+Following these 14 principles means SIL infrastructure will still be coherent, inspectable, and composable in 2035. The semantic substrate doesn't rot.
+
+---
+
 ## **2. Boundary Notes (Clarifications)**
 
 * These principles do **not** prohibit the use of ML models—only untraceable reasoning.

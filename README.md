@@ -27,12 +27,12 @@ Contemporary AI systems lack:
 
 **Ready to use now:**
 
-| Project | What It Does | Try It |
-|---------|-------------|--------|
-| [**reveal**](https://github.com/semantic-infrastructure-lab/reveal) | Progressive code exploration (PyPI) | `pip install reveal-cli` |
-| [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) | Cross-domain computation (audio+physics+circuits) | [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples) |
-| [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) | Declarative parametric CAD in YAML | [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md) |
-| [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) | Verifiable process provenance | [5-Min Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md) |
+| Project | What It Does | Status | Try It |
+|---------|-------------|--------|--------|
+| [**reveal**](https://github.com/semantic-infrastructure-lab/reveal) | Progressive code exploration | ✅ v0.13.1 on PyPI | `pip install reveal-cli` |
+| [**morphogen**](https://github.com/semantic-infrastructure-lab/morphogen) | Cross-domain computation (audio+physics+circuits) | ✅ Production | [Examples](https://github.com/semantic-infrastructure-lab/morphogen/examples) |
+| [**tiacad**](https://github.com/semantic-infrastructure-lab/tiacad) | Declarative parametric CAD in YAML | ✅ Production | [Tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md) |
+| [**genesisgraph**](https://github.com/semantic-infrastructure-lab/genesisgraph) | Verifiable process provenance | ✅ Production | [5-Min Quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md) |
 
 **[See all 11 projects →](projects/PROJECT_INDEX.md)**
 
@@ -333,22 +333,22 @@ For inquiries about collaboration, research partnerships, or contributions:
 
 ---
 
-## ⚡ Next Steps
+## 🔗 Quick Links
 
-**New to SIL?**
-1. Read the [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) (10 min) ⭐
-2. Read the [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min)
-3. Browse the [Project Index](projects/PROJECT_INDEX.md) (10 min)
-4. Try a production project (reveal, morphogen, tiacad, genesisgraph)
+**Start Here:**
+- [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) ⭐ - Why SIL exists (10 min)
+- [Try Reveal](https://pypi.org/project/reveal-cli/) - Production code exploration: `pip install reveal-cli`
+- [Reading Guide](docs/READING_GUIDE.md) - Choose your learning path
 
-**Want to understand the architecture?**
-1. Read the [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
-2. Read the [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
+**Learn More:**
+- [Manifesto](docs/canonical/SIL_MANIFESTO.md) - Core philosophy & vision (15 min)
+- [Technical Charter](docs/canonical/SIL_TECHNICAL_CHARTER.md) - Formal specification (45 min)
+- [Project Index](projects/PROJECT_INDEX.md) - All 11 projects explained
 
-**Want to contribute?**
-1. Read the [Principles](docs/canonical/SIL_PRINCIPLES.md) (10 min)
-2. Pick a project from the [Project Index](projects/PROJECT_INDEX.md)
-3. Check the project's contribution guide
+**Get Involved:**
+- [Design Principles](docs/canonical/SIL_PRINCIPLES.md) - How we build (10 min)
+- [GitHub Organization](https://github.com/semantic-infrastructure-lab) - Browse project repositories
+- Individual project contribution guides (see project READMEs)
 
 ---
 

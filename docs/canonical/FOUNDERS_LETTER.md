@@ -11,7 +11,7 @@ The Semantic Infrastructure Lab exists to address this gap.
 
 AI requires more than models. It requires **semantic infrastructure**—a substrate where representations are explicit, transformations are traceable, and reasoning paths can be inspected, challenged, and composed with human judgment. Without that substrate, progress becomes a sequence of clever heuristics. With it, we have the basis for transparent machine cognition.
 
-This is the work of SIL: designing the **Semantic Operating System**—a structured stack of meaning, memory, reasoning, and human–agent collaboration built on interpretable foundations. It includes persistent semantic memory, unified intermediate representations, deterministic engines, multi-agent orchestration, and interfaces where every cognitive layer remains visible.
+This is the work of SIL: designing the **[Semantic Operating System](./SIL_SEMANTIC_OS_ARCHITECTURE.md)**—a structured stack of meaning, memory, reasoning, and human–agent collaboration built on interpretable foundations. It includes persistent semantic memory, unified intermediate representations, deterministic engines, multi-agent orchestration, and interfaces where every cognitive layer remains visible.
 
 My role in this lab is architectural. I define the conceptual boundaries, structural aesthetics, and semantic constraints that shape how the system functions as a whole. I care about how representations are formed, how abstractions compose, and how complex reasoning becomes understandable. Infrastructure is only meaningful when it helps others think clearly and build safely.
 
@@ -26,6 +26,28 @@ This lab is an invitation: to researchers, builders, and anyone who believes int
 **Make meaning explicit.
 Make reasoning traceable.
 Build structures that last.**
+
+---
+
+## Related Reading
+
+**If you want to understand the architecture:**
+- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) - The 6-layer stack explained
+- [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - The Rosetta Stone for all SIL projects
+
+**If you want to see working systems:**
+- [Project Index](../../projects/PROJECT_INDEX.md) - All 11 projects with status
+- [Tools Documentation](../tools/README.md) - Production systems you can use today
+
+**If you want deeper philosophy:**
+- [Manifesto](./SIL_MANIFESTO.md) - Core vision and principles
+- [Design Principles](./SIL_PRINCIPLES.md) - The 14 constraints that guide all work
+
+**If you want to get started:**
+- [Quickstart](../QUICKSTART.md) - 30-minute guided tour with hands-on example
+- [FAQ](../FAQ.md) - Common questions answered
+
+---
 
 — Scott A. Senkeresty
 Founder & Chief Semantic Architect
