@@ -180,7 +180,7 @@ After 2 months in production (v0.16.0 released Nov 2025):
 - ✅ Agents use reveal **before** reading files (pattern adoption confirmed)
 - ✅ Token reduction matches predictions (7-150x measured in practice)
 - ✅ Two-tier system preferred (agents invoke `--agent-help` first, `--agent-help-full` for complex tasks)
-- ✅ Economic impact validated ($47K/year savings per 1000 agents confirmed)
+- ✅ Economic impact validated ($470K/year savings per 1000 agents confirmed)
 
 **Conclusion:** The standard works. The two-tier model is recommended for complex CLI tools.
 

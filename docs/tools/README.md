@@ -100,7 +100,7 @@ We've **implemented and validated** `--agent-help` in Reveal v0.16.0+ - proving 
 - Current waste: ~$110M/year from poor agent loops
 - With `--agent-help`: 50-86% reduction in common workflows
 - Energy savings: Billions of kWh annually
-- Reveal demonstrates: $47K savings per 1000 agents (validated)
+- Reveal demonstrates: $470K savings per 1000 agents (validated)
 
 ---
 
