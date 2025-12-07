@@ -342,24 +342,54 @@ Private repos are in active development and will be made public when ready for b
 ## 📋 Planned / Specification Phase
 
 ### [Prism](https://github.com/semantic-infrastructure-lab/prism) - Microkernel Query Engine
-**Status:** 📋 **Specification** | **Maturity:** Design phase | **Repo:** 🔒 Private
+**Status:** 📋 **Specification Complete** | **Maturity:** Architecture design complete, implementation pending | **Repo:** 🌍 Public
 
-**Layer:** Cross-Cutting (Microkernel research)
+**Layer:** Cross-Cutting (Microkernel research) + Layer 1 Frontend (Analytical/Relational domain)
 
-**What it is:** Formally verified microkernel query engine. Minimal trusted core with provable correctness guarantees.
+**Domain:** Analytical and relational computation (queries, data processing, set operations)
+
+**Position in SIL:** Domain-specific frontend to Pantheon, sister project to Morphogen (audio domain)
+
+**What it is:** Microkernel-based query execution system for analytical computation. Minimal kernel (3 primitives) with competing service bundles that demonstrate policy flexibility.
+
+**Architecture:**
+- **Prism Kernel** - 3 primitives (operators, buffers, channels), 14 syscalls, ~200 line C interface
+- **Set Stack Service** - Explainable analytics with Cascades optimizer, MLIR scheduler, domain operators (TimeOps, UnitOps)
+- **SEM Service** - GPU-optimized mesh topology scheduler, learned optimizer, heterogeneous hardware focus
+- Services compete on benchmarks; users choose based on workload
+
+**Key architectural insight:**
+Resolved "Set Stack vs SEM" question by recognizing they're not competing architectures to merge, but competing service bundles (policy) running atop the same microkernel (mechanism). Direct application of Jochen Liedtke's minimality criterion.
 
 **Key innovations:**
-- Microkernel architecture (mechanism, not policy)
-- Formal verification
-- Minimal TCB (Trusted Computing Base)
-- Composable query primitives
+- Microkernel architecture (mechanism, not policy) - kernel provides primitives, services provide optimization
+- Capability-based buffer isolation (prevents leaks, enables zero-copy, formal verification)
+- Pluggable optimizer services (Cascades cost-based, learned ML-guided, greedy heuristic)
+- Explainable physical strategies (optimizer justifies decisions with cost models)
+- Message-passing concurrency (race-free by construction, async channels)
+- Hardware introspection for accurate cost estimation
+- Competing service bundles prove microkernel flexibility
+
+**Integration with Pantheon:**
+```
+SetLang/SQL → Prism IR (logical operators) → Pantheon IR → MLIR → Hardware
+```
+Domain constraints (TimeOps, UnitOps) map to Pantheon metadata. Prism trace extends Pantheon provenance model.
+
+**Specifications complete:**
+- Microkernel architecture (500 lines) - kernel interface, service model, design rationale
+- Optimizer service design (747 lines) - pattern transformations, cost models, strategies
+- Set Stack vs SEM resolution (436 lines) - architectural decision, microkernel insight
+- SEM specification (complete 5-layer mesh topology alternative)
+- Kernel interface (C header with 14 syscalls)
+- Original Set Stack 8-layer design (for comparison)
 
 **Current work:**
-- Consolidating "Set Stack" specification
-- Formal semantics definition
-- Verification strategy
+- Implementation planning
+- Service interface prototyping
+- Integration design with Pantheon IR
 
-**Timeline:** 6-12 months to prototype
+**Timeline:** 6-12 months to working prototype (kernel + one service)
 
 ---
 
