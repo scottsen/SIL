@@ -73,7 +73,7 @@ Before describing what SIL intends to build, recognize what already exists.
 
 ### Reveal: Semantic Infrastructure in Action
 
-**reveal** (v0.16.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
+**reveal** (v0.16.0 on PyPI, ~2,000 downloads/month as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
 
 **The Problem reveal Solves:**
 
@@ -253,7 +253,7 @@ When structure is explicit, the system knows what to do. No configuration needed
 - **10x-100x savings** = 10x-100x cost reduction for AI systems
 
 **Adoption:**
-- 100+ downloads/day (PyPI)
+- ~2,000 downloads/month (PyPI)
 - 18 file types supported (Python, JS, TS, Rust, Go, C, C++, Java, etc.)
 - Production use in AI coding assistants
 
@@ -273,7 +273,7 @@ When structure is explicit, the system knows what to do. No configuration needed
 
 **These aren't promises. These are measurements.**
 
-1. **Semantic infrastructure works** - Production use, 100+ downloads/day, real economic value
+1. **Semantic infrastructure works** - Production use, ~2,000 downloads/month, measured efficiency
 2. **The principles generalize** - Same pattern applies to code, env vars, databases, APIs
 3. **The benefits compound** - Each new feature (pattern detection, URI adapters) leverages previous semantic structure
 4. **It's economical** - 10x token savings, zero configuration, perfect composition
@@ -645,7 +645,7 @@ The lab has developed **12 projects** spanning the six layers of the Semantic OS
 **Research & Specification:**
 - Pantheon (universal IR), Agent Ether (multi-agent protocols), Prism (query microkernel)
 
-This is not a roadmap. These are working systems with real users, validated economics ($470K/year savings per 1000 agents - [see calculation](../FAQ.md#11-how-does-sil-save-47k-per-year-for-agents)), and test coverage that proves maturity.
+This is not a roadmap. These are working systems with real users, measured efficiency (10x token reduction - [see details](../meta/FAQ.md#11-how-does-progressive-disclosure-reduce-token-usage)), and test coverage that proves maturity.
 
 **[See the full Project Index →](../projects/PROJECT_INDEX.md)**
 

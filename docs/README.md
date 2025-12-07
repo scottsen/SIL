@@ -20,7 +20,7 @@ reveal your_code.py
 
 See structure first (50 tokens) instead of reading entire files (500+ tokens). Progressive disclosure applied to code.
 
-**[More production tools →](docs/innovations/)** - morphogen, tiacad, genesisgraph
+**[More production tools →](innovations/)** - morphogen, tiacad, genesisgraph
 
 ---
 
@@ -44,19 +44,19 @@ Contemporary AI systems are powerful but lack:
 ## Learn More
 
 ### Documentation
-**[→ Complete Documentation](docs/)** - Philosophy, architecture, research, and guides
+**[→ Complete Documentation](.)** - Philosophy, architecture, research, and guides
 
 **Quick links:**
-- [Founder's Letter](docs/canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
-- [Manifesto](docs/canonical/SIL_MANIFESTO.md) (15 min) - What we're building
-- [FAQ](docs/meta/FAQ.md) - Common questions answered
-- [Unified Architecture Guide](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
+- [Founder's Letter](canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
+- [Manifesto](canonical/SIL_MANIFESTO.md) (15 min) - What we're building
+- [FAQ](meta/FAQ.md) - Common questions answered
+- [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
 
 ### Projects
-**[→ Project Index](projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
+**[→ Project Index](../projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
 
 ### Contributing
-**[→ Contributing Guide](CONTRIBUTING.md)** - How to get involved
+**[→ Contributing Guide](../CONTRIBUTING.md)** - How to get involved
 
 ---
 
@@ -73,13 +73,13 @@ Layer 0: Semantic Memory          semantic-memory
 Cross-Cutting: Provenance         genesisgraph, prism
 ```
 
-**[Read the complete architecture →](docs/architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
+**[Read the complete architecture →](architecture/UNIFIED_ARCHITECTURE_GUIDE.md)**
 
 ---
 
 ## License
 
-- **Code:** [Apache 2.0](LICENSE) - Use commercially, fork, modify
+- **Code:** [Apache 2.0](../LICENSE) - Use commercially, fork, modify
 - **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - Share freely with attribution
 
 ---

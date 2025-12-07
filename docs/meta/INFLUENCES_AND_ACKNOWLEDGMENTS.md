@@ -101,7 +101,7 @@ But remember: **All of them are part of the same tradition—the tradition of wr
 
 ### Alan Turing (1912-1954) — Morphogenesis & Emergence
 
-**Dedication**: [Full Dedication Document →](./TURING_DEDICATION_EXTENDED.md)
+**Dedication**: [Read Full Dedication →](./DEDICATION.md)
 
 **Relationship**: SIL **continues Turing's unfinished morphogenesis research**
 
@@ -221,7 +221,7 @@ These pioneers taught us how to build systems that actually work—principles fo
 
 **Influence on SIL**:
 - **Layer Separation**: Pantheon IR (mechanism) vs domain modules (policy)
-- **Minimal Kernel**: Set Stack provides primitives, not prescriptive solutions
+- **Minimal Kernel**: Prism provides primitives, not prescriptive solutions
 - **Performance Matters**: Fast primitives enable experimentation
 
 **Legacy**: SIL's layered architecture—Pantheon IR is mechanism, domain-specific tools are policy.
@@ -467,11 +467,10 @@ This is a living acknowledgment. As we discover new influences or better articul
 
 ## 🔗 Related Documents
 
-- [Turing Dedication (Full)](./TURING_DEDICATION_EXTENDED.md) - Morphogenesis lineage
-- [SIL ❤️ Jeremy](./SIL_HEARTS_JEREMY.md) - FastHTML and education influences
-- [SIL Manifesto](./SIL_MANIFESTO.md) - Values and principles
-- [Pantheon README](../../pantheon/README.md) - Universal IR influences
-- [Set Stack vs SEM Resolution](../../Set Stack/SET_STACK_VS_SEM_RESOLUTION.md) - Where we learned from masters
+- [Turing Dedication](./DEDICATION.md) - Morphogenesis lineage
+- [SIL ❤️ Jeremy Howard](./APPRECIATION_JEREMY_HOWARD.md) - FastHTML and education influences
+- [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Values and principles
+- [Project Index](../../projects/PROJECT_INDEX.md) - All SIL projects including Pantheon
 
 ---
 

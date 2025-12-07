@@ -39,7 +39,7 @@ beth_topics:
 
 This is an **appreciation**, not a **dedication**:
 
-- **Dedication** (like [Turing](./TURING_DEDICATION_EXTENDED.md)): We continue unfinished theoretical work
+- **Dedication** (like [Turing](./DEDICATION.md)): We continue unfinished theoretical work
 - **Appreciation** (this doc): We adopt practical philosophies and thank contemporary practitioners
 
 Jeremy Howard is **alive, active, and building** the tools and teaching methods we use daily. This document acknowledges his influence on **how we code, teach, and build**—not foundational theory we extend.
