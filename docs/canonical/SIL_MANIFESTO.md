@@ -73,7 +73,7 @@ Before describing what SIL intends to build, recognize what already exists.
 
 ### Reveal: Semantic Infrastructure in Action
 
-**reveal** (v0.16.0 on PyPI, ~2,000 downloads/month as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
+**reveal** (v0.17.0 on PyPI, ~2,000 downloads/month as of Dec 2025) demonstrates that when you prioritize structure, meaning, and provenance, you get systems that work better—and the benefits compound.
 
 **The Problem reveal Solves:**
 
@@ -124,7 +124,7 @@ app.py:15-27 | load_config
 
 ### Pattern Detection: Semantic Rules, Not Heuristics
 
-reveal (v0.16.0+) doesn't just show code structure—it understands code quality patterns.
+reveal (v0.17.0+) doesn't just show code structure—it understands code quality patterns.
 
 ```bash
 $ reveal app.py --check --select B,S
@@ -149,7 +149,7 @@ This IS semantic understanding: structure + explicit meaning → actionable insi
 
 ### Universal Resource Exploration: Principles Transcend Code
 
-reveal's URI adapter system (v0.16.0+) proves semantic patterns apply to ANY structured resource.
+reveal's URI adapter system (v0.17.0+) proves semantic patterns apply to ANY structured resource.
 
 **Same progressive disclosure, different resource types:**
 
@@ -158,7 +158,7 @@ reveal's URI adapter system (v0.16.0+) proves semantic patterns apply to ANY str
 $ reveal app.py
 Functions: 5, Classes: 2
 
-# Environment variables (v0.16.0 - shipped!)
+# Environment variables (v0.17.0 - shipped!)
 $ reveal env://
 env://
 ├── PATH (753 chars, 8 directories)
@@ -633,7 +633,7 @@ SIL is not aspirational. It is operational.
 The lab has developed **12 projects** spanning the six layers of the Semantic OS, with **4 production-ready systems** and over **3,100 tests** ensuring reliability:
 
 **Production-Ready Today:**
-- **Reveal** (v0.16.0 on PyPI) — Code exploration with 86% token reduction, `--agent-help` standard implemented
+- **Reveal** (v0.17.0 on PyPI) — Code exploration with 86% token reduction, Python runtime inspection, `--agent-help` standard with 3-tier progressive discovery
 - **Morphogen** (v0.11) — Cross-domain deterministic computation
 - **TiaCAD** (v3.1.1) — Declarative parametric CAD in YAML
 - **GenesisGraph** (v0.3.0) — Verifiable provenance with selective disclosure

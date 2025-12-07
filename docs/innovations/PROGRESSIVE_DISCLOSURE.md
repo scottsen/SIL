@@ -151,10 +151,11 @@ $ reveal middleware.py validate_token
 
 ## Status & Adoption
 
-**Current Version:** v0.16.0 (Production, PyPI Published)
+**Current Version:** v0.17.0 (Production, PyPI Published - Released Dec 2025)
 
 **Production Metrics:**
 - ✅ **100+ daily downloads** on PyPI
+- ✅ **v0.17.0 shipped** with Python runtime adapter (`python://`) and 3-tier help system
 - ✅ **v0.16.0 shipped** with type system (entities, relationships, call graphs)
 - ✅ **86% token reduction** empirically measured across AI agent tasks
 - ✅ **URI adapter architecture** supports 10+ file types (Python, JS, JSON, YAML, Markdown, etc.)
@@ -325,7 +326,7 @@ Humans don't read code linearly (cat file.py → read 3000 lines). Humans naviga
 
 ---
 
-**Version:** 0.16.0 (Production)
+**Version:** 0.17.0 (Production - Released Dec 7, 2025)
 **License:** Apache 2.0
 **Status:** Production-ready, active development
 

@@ -112,7 +112,7 @@ Following these 14 principles means SIL infrastructure will still be coherent, i
 
 SIL principles are not aspirational—they're operational in production tools today.
 
-**reveal** (v0.16.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
+**reveal** (v0.17.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
 
 ### **Principle #1: Structure Before Heuristics**
 
@@ -229,7 +229,7 @@ Exact line range. Verifiable. Reproducible.
 
 ### **Universal Resource Exploration: Principles Transcend Domains**
 
-reveal's URI adapter system (v0.16.0+) proves these principles generalize beyond code:
+reveal's URI adapter system (v0.17.0+) proves these principles generalize beyond code:
 
 **Same progressive disclosure pattern, different resources:**
 
@@ -238,7 +238,7 @@ reveal's URI adapter system (v0.16.0+) proves these principles generalize beyond
 $ reveal app.py
 Functions: 5, Classes: 2, Imports: 3
 
-# Environment variables (v0.16.0)
+# Environment variables (v0.17.0)
 $ reveal env://
 env://
 ├── PATH (753 chars, 8 directories)

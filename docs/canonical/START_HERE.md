@@ -33,9 +33,10 @@ SIL is not a vision document. It's working infrastructure:
 - **Morphogen** — Cross-domain unified primitives (40+ computational domains)
 
 ### Production Tools
-- **Reveal** (v0.16.0) — Progressive disclosure for code structure
+- **Reveal** (v0.17.0) — Progressive disclosure for code structure & Python runtime inspection
   - `pip install reveal-cli`
   - 86% token reduction for agent workflows
+  - New: `python://` adapter for runtime environment analysis
   - AST-based, correct, composable
 
 - **Agent Help Standard** — Strategic guidance for AI agents using CLI tools
