@@ -92,13 +92,13 @@ reveal your_code.py
 
 **Try Production Projects:**
 - **reveal:** Progressive code exploration
-- **morphogen:** Cross-domain computation ([examples](https://github.com/semantic-infrastructure-lab/morphogen/examples))
-- **tiacad:** Declarative CAD ([tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md))
-- **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md))
+- **morphogen:** Cross-domain computation ([examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples))
+- **tiacad:** Declarative CAD ([tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL.md))
+- **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md))
 
 **Explore the Ecosystem:**
-- [Project Index](../../projects/PROJECT_INDEX.md) - All 12 projects
-- [Tools Documentation](../tools/README.md) - Production systems explained
+- [Project Index](/projects) - All 12 projects
+- [Tools Documentation](/docs/tools-overview) - Production systems explained
 
 **Learn the Architecture:**
 - [Start Here](../canonical/START_HERE.md) - 30-minute guided tour
@@ -108,7 +108,7 @@ reveal your_code.py
 
 ### 6. What's the license?
 
-**Code:** [Apache 2.0 License](../../LICENSE)
+**Code:** [Apache 2.0 License](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/LICENSE)
 **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 **In practice:**
@@ -161,7 +161,7 @@ Read [SIL Principles](../canonical/SIL_PRINCIPLES.md) (10 minutes). All contribu
 
 **Step 2: Pick a Project**
 
-Browse [Project Index](../../projects/PROJECT_INDEX.md) and choose based on your interests:
+Browse [Project Index](/projects) and choose based on your interests:
 - **Code exploration:** reveal
 - **Cross-domain computation:** morphogen
 - **Provenance:** genesisgraph
@@ -171,8 +171,8 @@ Browse [Project Index](../../projects/PROJECT_INDEX.md) and choose based on your
 **Step 3: Check Project Guidelines**
 
 Each project has a CONTRIBUTING.md in its repository:
-- [reveal/CONTRIBUTING.md](https://github.com/semantic-infrastructure-lab/reveal/CONTRIBUTING.md)
-- [morphogen/CONTRIBUTING.md](https://github.com/semantic-infrastructure-lab/morphogen/CONTRIBUTING.md)
+- [reveal/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/reveal/blob/master/CONTRIBUTING.md)
+- [morphogen/CONTRIBUTING.md](https://github.com/Semantic-Infrastructure-Lab/morphogen/blob/main/CONTRIBUTING.md)
 - *(Check individual repos for others)*
 
 **Step 4: Start Small**
@@ -314,7 +314,7 @@ WaterCycle(
 - Faster responses (fewer tokens to process)
 - Better results (agents see structure, not walls of text)
 
-**Read more:** [Tools Documentation](../tools/README.md), Economics section
+**Read more:** [Tools Documentation](/docs/tools-overview), Economics section
 
 ---
 
@@ -353,19 +353,19 @@ reveal morphogen/src/core.py Operator
 ```
 
 **morphogen (Cross-Domain Computation):**
-- [Audio synthesis examples](https://github.com/semantic-infrastructure-lab/morphogen/examples/audio)
-- [Physics simulation examples](https://github.com/semantic-infrastructure-lab/morphogen/examples/physics)
-- [Circuit design examples](https://github.com/semantic-infrastructure-lab/morphogen/examples/circuits)
+- [Audio synthesis examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/audio)
+- [Physics simulation examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/rigidbody_physics)
+- [Circuit design examples](https://github.com/Semantic-Infrastructure-Lab/morphogen/tree/main/examples/circuit)
 
 **tiacad (Declarative CAD):**
-- [Full tutorial](https://github.com/semantic-infrastructure-lab/tiacad/TUTORIAL.md)
-- [Example models](https://github.com/semantic-infrastructure-lab/tiacad/examples)
+- [Full tutorial](https://github.com/Semantic-Infrastructure-Lab/tiacad/blob/main/docs/user/TUTORIAL.md)
+- [Example models](https://github.com/Semantic-Infrastructure-Lab/tiacad/tree/main/examples)
 
 **genesisgraph (Provenance):**
-- [5-minute quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md)
-- [Compliance examples](https://github.com/semantic-infrastructure-lab/genesisgraph/examples/compliance)
+- [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md)
+- [Example workflows](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/tree/main/examples)
 
-**All project links:** [Project Index](../../projects/PROJECT_INDEX.md)
+**All project links:** [Project Index](/projects)
 
 ---
 
@@ -417,18 +417,18 @@ reveal morphogen/src/core.py Operator
 → [Manifesto](../canonical/SIL_MANIFESTO.md) (15 min)
 
 **Choose Your Path:**
-→ [Reading Guide](../READING_GUIDE.md) - 4 curated reading paths
+→ [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE.md) - 4 curated reading paths
 
 **Try Production Tools:**
-→ [Tools Documentation](../tools/README.md)
-→ [Project Index](../../projects/PROJECT_INDEX.md)
+→ [Tools Documentation](/docs/tools-overview)
+→ [Project Index](/projects)
 
 **Research Papers:**
 → [RAG as Semantic Manifold Transport](../research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
 → [Agent-Help Standard](../research/AGENT_HELP_STANDARD.md)
 
 **Community:**
-→ [GitHub Organization](https://github.com/semantic-infrastructure-lab)
+→ [GitHub Organization](https://github.com/Semantic-Infrastructure-Lab)
 → GitHub Issues on individual project repos
 
 ---
