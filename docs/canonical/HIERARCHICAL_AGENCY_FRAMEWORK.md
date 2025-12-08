@@ -21,6 +21,38 @@ This document synthesizes organizational theory, mission command doctrine, and m
 - **MULTI_AGENT_PROTOCOL_PRINCIPLES.md** defines the **horizontal structure** (how agents at the same level coordinate)
 - Together, they form a complete multi-agent architecture
 
+```mermaid
+graph TB
+    subgraph Strategic["Strategic Level"]
+        S1[Meta-Planner]
+        S2["High Agency<br/>Deep Context<br/>Years Timeline"]
+    end
+
+    subgraph Operational["Operational Level"]
+        O1[Workflow Coordinator]
+        O2["Medium Agency<br/>Partial Context<br/>Weeks Timeline"]
+    end
+
+    subgraph Tactical["Tactical Level"]
+        T1[Specialist Agent]
+        T2["Limited Agency<br/>Local Context<br/>Hours Timeline"]
+    end
+
+    subgraph Execution["Execution Level"]
+        E1[Tools & APIs]
+        E2["Narrow Agency<br/>Minimal Context<br/>Seconds Timeline"]
+    end
+
+    Strategic --> Operational
+    Operational --> Tactical
+    Tactical --> Execution
+
+    style Strategic fill:#e8f5e9,stroke:#2e7d32
+    style Operational fill:#e3f2fd,stroke:#1565c0
+    style Tactical fill:#fff3e0,stroke:#e65100
+    style Execution fill:#f5f5f5,stroke:#757575
+```
+
 ---
 
 ## 1. Agency Is Not Uniform—It Is Calibrated by Level

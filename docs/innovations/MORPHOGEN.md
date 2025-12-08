@@ -15,6 +15,30 @@
 
 Current tools force you to be a systems integrator before you can be a creator.
 
+```mermaid
+flowchart LR
+    subgraph Before["Traditional Workflow"]
+        direction TB
+        CAD[CAD Tool<br/>$5K] --> |export| FEA[FEA Tool<br/>$20K]
+        FEA --> |export| CFD[CFD Tool<br/>$40K]
+        CFD --> |manual| AUDIO[Audio Tool<br/>$400]
+        AUDIO --> |scripts| VIZ[Visualization]
+    end
+
+    subgraph After["Morphogen"]
+        direction TB
+        M1[geometry] --> M2[physics]
+        M2 --> M3[acoustics]
+        M3 --> M4[audio]
+        M4 --> M5[visualization]
+    end
+
+    Before -.->|"Replace with"| After
+
+    style Before fill:#ffebee,stroke:#c62828
+    style After fill:#e8f5e9,stroke:#2e7d32
+```
+
 ---
 
 ## The Innovation
@@ -156,6 +180,25 @@ morphogen run examples/heat_diffusion.kairo
 ---
 
 ## Part of SIL's Semantic OS Vision
+
+```mermaid
+graph TB
+    subgraph SIL["SIL Semantic OS Layers"]
+        L7["Layer 7: Applications"]
+        L6["Layer 6: Workflows"]
+        L5["Layer 5: Composition"]
+        L4["Layer 4: Dynamics<br/><b>Morphogen.Scheduler</b>"]
+        L3["Layer 3: Semantics<br/>Pantheon USIR"]
+        L2["Layer 2: Geometry<br/>TiaCAD"]
+        L1["Layer 1: Primitives<br/><b>Morphogen.Domains</b>"]
+        L0["Layer 0: Hardware<br/>Philbrick"]
+    end
+
+    L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1 --> L0
+
+    style L1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style L4 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+```
 
 **Morphogen's Role in the 7-Layer Semantic OS:**
 

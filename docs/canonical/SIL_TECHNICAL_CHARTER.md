@@ -24,7 +24,7 @@ SIL Technical Charter (v1)
 - **Glossary:** `./SIL_GLOSSARY.md` - Look up terms while reading
 - **Principles:** `./SIL_PRINCIPLES.md` - Why these constraints exist
 - **Pattern:** `../architecture/UNIFIED_ARCHITECTURE_GUIDE.md` - High-level framework
-- **Navigation:** `../READING_GUIDE.md` - All documentation paths
+- **Navigation:** [Start Here](START_HERE.md) - Entry point to SIL
 
 **Time Required:** 2-4 hours (reference document, can read sections as needed)
 

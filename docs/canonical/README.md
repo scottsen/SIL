@@ -2,7 +2,10 @@
 
 **The foundational documents of the Semantic Infrastructure Lab**
 
-These are the authoritative, definitive documents that define SIL's mission, principles, technical architecture, and governance. If you're new to SIL, start here.
+> **Navigation:** This is the index of canonical documents.
+> - [Start Here](START_HERE.md) — New to SIL? Begin there
+
+These are the authoritative, definitive documents that define SIL's mission, principles, technical architecture, and governance.
 
 ---
 
@@ -178,7 +181,7 @@ Together, these six documents provide everything you need to understand SIL's fo
 
 ## Navigation
 
-- **Parent:** [Documentation Hub](../READING_GUIDE.md)
+- **Parent:** [Start Here](START_HERE.md)
 - **Next Steps:**
   - Try production tools: [Tools](../tools/)
   - Read research papers: [Research](../research/)

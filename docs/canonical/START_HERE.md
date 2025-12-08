@@ -2,6 +2,10 @@
 
 **Start Here** — The single front door to SIL
 
+> **Navigation:** This is the single front door to SIL.
+> - [FAQ](../meta/FAQ.md) — Common questions answered
+> - [Glossary](SIL_GLOSSARY.md) — Terms and definitions
+
 ---
 
 ## What is SIL?

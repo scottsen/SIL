@@ -127,7 +127,7 @@ After reading this guide:
 
 ## Navigation
 
-- **Parent:** [Documentation Hub](../READING_GUIDE.md)
+- **Parent:** [Start Here](../canonical/START_HERE.md)
 - **Related:** [Canonical Documents](../canonical/), [Tools](../tools/)
 - **Projects:** [Project Index](../../projects/PROJECT_INDEX.md)
 

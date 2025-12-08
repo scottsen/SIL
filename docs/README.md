@@ -2,6 +2,9 @@
 
 **Making AI systems transparent and reliable through open infrastructure**
 
+> **Navigation:** This is the repository overview.
+> - [Start Here](canonical/START_HERE.md) — The single front door to SIL
+
 [![Projects](https://img.shields.io/badge/Projects-12-blue)]()
 [![Production Ready](https://img.shields.io/badge/Production-4-green)]()
 [![Tests](https://img.shields.io/badge/Tests-3100+-brightgreen)]()

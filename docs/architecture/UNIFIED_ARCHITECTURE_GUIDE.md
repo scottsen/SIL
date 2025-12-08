@@ -63,8 +63,8 @@ This is the **Rosetta Stone** for SIL architecture. It:
 ### **"I need to see concrete implementation"**
 → See Pantheon's documentation for concrete 7-layer Cognitive OSI Stack implementation
 
-### **"I need the complete reading guide"**
-→ See **`../READING_GUIDE.md`** for all documentation paths
+### **"I need the entry point"**
+→ See **[Start Here](../canonical/START_HERE.md)** for the front door to SIL
 
 ### **"I'm looking for examples of how to use this"**
 → See Part 8 (Quick Reference Examples) and Part 10 (The Meta-Pattern) below

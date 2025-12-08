@@ -2,6 +2,11 @@
 
 **Get hands-on with Semantic Infrastructure Lab tools in 10 minutes**
 
+> **Navigation:** This is the hands-on path.
+> - **You are here:** Install tools, try them immediately
+> - [Start Here](canonical/START_HERE.md) — Prefer concepts first? Start there
+> - [Reading Guide](READING_GUIDE.md) — 7 paths for different audiences
+
 ---
 
 ## What You'll Learn

@@ -33,6 +33,57 @@ Layer 0: Semantic Memory      ← Knowledge graphs, provenance, persistence
 
 > 💡 **New to SIL terminology?** Keep the [Glossary](./SIL_GLOSSARY.md) open in another tab.
 
+```mermaid
+graph TB
+    subgraph L5["Layer 5: Human Interfaces"]
+        H1[CLIs]
+        H2[GUIs]
+        H3[Chat Agents]
+    end
+
+    subgraph L4["Layer 4: Deterministic Engines"]
+        D1[Morphogen]
+        D2[Hermetic Builds]
+        D3[Verification]
+    end
+
+    subgraph L3["Layer 3: Agent Ether"]
+        A1[Coordination]
+        A2[Discovery]
+        A3[Composition]
+    end
+
+    subgraph L2["Layer 2: Domain Modules"]
+        M1[Water]
+        M2[Healthcare]
+        M3[Education]
+    end
+
+    subgraph L1["Layer 1: Pantheon IR"]
+        P1[Universal Types]
+        P2[Semantic Operators]
+    end
+
+    subgraph L0["Layer 0: Semantic Memory"]
+        S1[Knowledge Graphs]
+        S2[Provenance]
+        S3[Persistence]
+    end
+
+    L5 <--> L4
+    L4 <--> L3
+    L3 <--> L2
+    L2 <--> L1
+    L1 <--> L0
+
+    style L5 fill:#e1f5fe,stroke:#01579b
+    style L4 fill:#e8f5e9,stroke:#2e7d32
+    style L3 fill:#fff3e0,stroke:#e65100
+    style L2 fill:#f3e5f5,stroke:#6a1b9a
+    style L1 fill:#e3f2fd,stroke:#1565c0
+    style L0 fill:#fce4ec,stroke:#880e4f
+```
+
 ---
 
 ## Overview
