@@ -645,9 +645,9 @@ The lab has developed **12 projects** spanning the six layers of the Semantic OS
 **Research & Specification:**
 - Pantheon (universal IR), Agent Ether (multi-agent protocols), Prism (query microkernel)
 
-This is not a roadmap. These are working systems with real users, measured efficiency (10x token reduction - [see details](../meta/FAQ.md#11-how-does-progressive-disclosure-reduce-token-usage)), and test coverage that proves maturity.
+This is not a roadmap. These are working systems with real users, measured efficiency (10x token reduction - [see FAQ](../meta/FAQ.md)), and test coverage that proves maturity.
 
-**[See the full Project Index →](../projects/PROJECT_INDEX.md)**
+**[See the full Project Index →](../../projects/PROJECT_INDEX.md)**
 
 ## 12. Founder Stance (Explicitly, Simply)
 

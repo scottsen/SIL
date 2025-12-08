@@ -98,7 +98,7 @@ SIL builds infrastructure meant to last decades, not chase quarterly trends.
 
 ### For Collaborators
 **[FAQ](../meta/FAQ.md)** — Common questions answered
-**[Contributing](../../CONTRIBUTING.md)** — How to join us
+**[GitHub](https://github.com/Semantic-Infrastructure-Lab)** — How to join us
 
 ## The Bell Labs of AI
 

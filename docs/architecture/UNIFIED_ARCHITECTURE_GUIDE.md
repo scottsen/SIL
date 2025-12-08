@@ -522,8 +522,8 @@ prism --parser=setlang --scheduler=mesh query.sql
 ## 📚 Part 12: Related Documentation
 
 **Core SIL:**
-- [SIL Design Principles](SIL_DESIGN_PRINCIPLES.md) - The 5 principles
-- [SIL Ecosystem Project Layout](SIL_ECOSYSTEM_PROJECT_LAYOUT.md) - All projects mapped
+- [SIL Design Principles](../canonical/SIL_DESIGN_PRINCIPLES.md) - The 5 principles
+- [Project Index](../../projects/PROJECT_INDEX.md) - All projects mapped
 
 **Concrete Implementations:**
 - Pantheon - Adapter architecture (USIR implementation)

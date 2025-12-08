@@ -343,11 +343,11 @@ This is semantic infrastructure in practice: substrate that enables research, no
 
 **Architecture:**
 - [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md) - Where Beth fits in the 7-layer stack
-- [Knowledge Mesh](../innovations/KNOWLEDGE_MESH.md) - Distributed knowledge representation
+- [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) - Complete system design
 
 **Companion Systems:**
 - [Tia](./TIA.md) - Chief Semantic Agent who queries Beth
-- [GenesisGraph](./GENESISGRAPH.md) - Cryptographic provenance that Beth integrates
+- [GenesisGraph](../innovations/GENESISGRAPH.md) - Cryptographic provenance that Beth integrates
 
 **Philosophy:**
 - [Founder's Letter](../canonical/FOUNDERS_LETTER.md) - Glass-box laboratory principles

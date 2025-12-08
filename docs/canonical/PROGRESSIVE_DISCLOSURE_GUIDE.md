@@ -463,7 +463,7 @@ def run_research(topic: str, config_path: str = "scout_config.yaml") -> Research
 2. **Workflow example** - Multi-step showing typical patterns
 3. **Complete example** - Full context with edge cases
 
-See: [SIL Core Principles #9: Examples as Multi-Shot Reasoning Anchors](SIL_CORE_PRINCIPLES.md#9-examples-as-multi-shot-reasoning-anchors)
+See: [SIL Principles](./SIL_PRINCIPLES.md) - Examples as Multi-Shot Reasoning Anchors
 
 ---
 
@@ -901,8 +901,8 @@ If yes, add Progressive Disclosure.
 
 ## Related Documentation
 
-- [SIL Core Principles](SIL_CORE_PRINCIPLES.md) - Full principle hierarchy
-- [Knowledge Mesh Quality Imperative](KNOWLEDGE_MESH_QUALITY_IMPERATIVE.md) - Context management
+- [SIL Principles](./SIL_PRINCIPLES.md) - Full principle hierarchy
+- [SIL Design Principles](./SIL_DESIGN_PRINCIPLES.md) - Detailed design guidance
 - reveal: `reveal --agent-help-full` - See Progressive Disclosure in action
 
 ---

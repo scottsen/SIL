@@ -97,18 +97,18 @@ reveal your_code.py
 - **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md))
 
 **Explore the Ecosystem:**
-- [Project Index](../projects/PROJECT_INDEX.md) - All 12 projects
-- [Tools Documentation](tools/README.md) - Production systems explained
+- [Project Index](../../projects/PROJECT_INDEX.md) - All 12 projects
+- [Tools Documentation](../tools/README.md) - Production systems explained
 
 **Learn the Architecture:**
-- [Quickstart](QUICKSTART.md) - 30-minute guided tour
-- [Reading Guide](READING_GUIDE.md) - Choose your depth
+- [Quickstart](../QUICKSTART.md) - 30-minute guided tour
+- [Reading Guide](../READING_GUIDE.md) - Choose your depth
 
 ---
 
 ### 6. What's the license?
 
-**Code:** [MIT License](../LICENSE)
+**Code:** [Apache 2.0 License](../../LICENSE)
 **Documentation:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 **In practice:**
@@ -132,7 +132,7 @@ reveal your_code.py
 - genesisgraph (v0.3.0) - Provenance tracking
 
 **Research/Alpha (Early):**
-- Pantheon IR (Universal Semantic Intermediate Representation) - "Assembly language for meaning" enabling cross-domain transformations ([Glossary](canonical/SIL_GLOSSARY.md#pantheon-ir))
+- Pantheon IR (Universal Semantic Intermediate Representation) - "Assembly language for meaning" enabling cross-domain transformations ([Glossary](../canonical/SIL_GLOSSARY.md))
 - Agent Ether - Multi-agent coordination protocols (research stage)
 - Semantic Memory - Persistent knowledge substrate (alpha)
 
@@ -152,7 +152,7 @@ reveal your_code.py
 
 **Step 1: Understand SIL's Principles**
 
-Read [SIL Principles](canonical/SIL_PRINCIPLES.md) (10 minutes). All contributions must follow these 5 design constraints:
+Read [SIL Principles](../canonical/SIL_PRINCIPLES.md) (10 minutes). All contributions must follow these 5 design constraints:
 1. Clarity - Explicit over implicit
 2. Simplicity - Essential complexity only
 3. Composability - Modules that combine predictably
@@ -161,7 +161,7 @@ Read [SIL Principles](canonical/SIL_PRINCIPLES.md) (10 minutes). All contributio
 
 **Step 2: Pick a Project**
 
-Browse [Project Index](../projects/PROJECT_INDEX.md) and choose based on your interests:
+Browse [Project Index](../../projects/PROJECT_INDEX.md) and choose based on your interests:
 - **Code exploration:** reveal
 - **Cross-domain computation:** morphogen
 - **Provenance:** genesisgraph
@@ -237,7 +237,7 @@ Layer 0: Semantic Memory         ← Persistent knowledge graphs
    - Every layer visible and inspectable
    - Progressive disclosure of complexity
 
-**Read more:** [Semantic OS Architecture](canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
+**Read more:** [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
 
 ---
 
@@ -280,7 +280,7 @@ WaterCycle(
 
 **Status:** Research prototype, not yet production-ready.
 
-**Read more:** [Technical Charter](canonical/SIL_TECHNICAL_CHARTER.md), Section on USIR
+**Read more:** [Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md), Section on USIR
 
 ---
 
@@ -314,7 +314,7 @@ WaterCycle(
 - Faster responses (fewer tokens to process)
 - Better results (agents see structure, not walls of text)
 
-**Read more:** [Tools Documentation](tools/README.md), Economics section
+**Read more:** [Tools Documentation](../tools/README.md), Economics section
 
 ---
 
@@ -337,7 +337,7 @@ WaterCycle(
 - **Cross-domain composition** - Tools that work together via shared semantics
 - **Civilization-scale infrastructure** - The "steel" to AI's "wood"
 
-**Read more:** [Research Agenda Year 1](canonical/SIL_RESEARCH_AGENDA_YEAR1.md)
+**Read more:** [Research Agenda Year 1](../canonical/SIL_RESEARCH_AGENDA_YEAR1.md)
 
 ---
 
@@ -365,7 +365,7 @@ reveal morphogen/src/core.py Operator
 - [5-minute quickstart](https://github.com/semantic-infrastructure-lab/genesisgraph/docs/getting-started/quickstart.md)
 - [Compliance examples](https://github.com/semantic-infrastructure-lab/genesisgraph/examples/compliance)
 
-**All project links:** [Project Index](../projects/PROJECT_INDEX.md)
+**All project links:** [Project Index](../../projects/PROJECT_INDEX.md)
 
 ---
 
@@ -397,7 +397,7 @@ reveal morphogen/src/core.py Operator
 - **Determinism in the core** (semantic computation)
 - **Provenance everywhere** (track when and why randomness was involved)
 
-**Read more:** [Principles](canonical/SIL_PRINCIPLES.md) - Reproducibility principle
+**Read more:** [Principles](../canonical/SIL_PRINCIPLES.md) - Reproducibility principle
 
 ---
 
@@ -406,26 +406,26 @@ reveal morphogen/src/core.py Operator
 **Quick Paths:**
 
 **30-Minute Overview:**
-→ [Quickstart](QUICKSTART.md) - Guided tour with hands-on example
+→ [Quickstart](../QUICKSTART.md) - Guided tour with hands-on example
 
 **Deep Architecture:**
-→ [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
-→ [Technical Charter](canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
+→ [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
+→ [Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
 
 **Philosophy & Vision:**
-→ [Founder's Letter](canonical/FOUNDERS_LETTER.md) (10 min)
-→ [Manifesto](canonical/SIL_MANIFESTO.md) (15 min)
+→ [Founder's Letter](../canonical/FOUNDERS_LETTER.md) (10 min)
+→ [Manifesto](../canonical/SIL_MANIFESTO.md) (15 min)
 
 **Choose Your Path:**
-→ [Reading Guide](READING_GUIDE.md) - 4 curated reading paths
+→ [Reading Guide](../READING_GUIDE.md) - 4 curated reading paths
 
 **Try Production Tools:**
-→ [Tools Documentation](tools/README.md)
-→ [Project Index](../projects/PROJECT_INDEX.md)
+→ [Tools Documentation](../tools/README.md)
+→ [Project Index](../../projects/PROJECT_INDEX.md)
 
 **Research Papers:**
-→ [RAG as Semantic Manifold Transport](research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
-→ [Agent-Help Standard](research/AGENT_HELP_STANDARD.md)
+→ [RAG as Semantic Manifold Transport](../research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
+→ [Agent-Help Standard](../research/AGENT_HELP_STANDARD.md)
 
 **Community:**
 → [GitHub Organization](https://github.com/semantic-infrastructure-lab)
@@ -443,11 +443,11 @@ reveal morphogen/src/core.py Operator
 - Email: *(contact information coming soon)*
 
 **For contribution questions:**
-- Read [Contributing Guidelines](../README.md#-contributing)
+- Visit [GitHub](https://github.com/Semantic-Infrastructure-Lab)
 - Check project-specific CONTRIBUTING.md files
 
 ---
 
 *Created: 2025-12-01*
-*Part of: [SIL Documentation](README.md)*
+*Part of: [SIL Documentation](../README.md)*
 *License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)*

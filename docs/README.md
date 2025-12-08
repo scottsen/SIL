@@ -56,7 +56,7 @@ Contemporary AI systems are powerful but lack:
 **[→ Project Index](../projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
 
 ### Contributing
-**[→ Contributing Guide](../CONTRIBUTING.md)** - How to get involved
+**[→ GitHub](https://github.com/Semantic-Infrastructure-Lab)** - How to get involved
 
 ---
 

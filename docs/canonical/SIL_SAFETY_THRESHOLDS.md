@@ -720,9 +720,9 @@ Proceed with campaign? [y/N]
 
 ## Related Documentation
 
-- [SIL Core Principles](SIL_CORE_PRINCIPLES.md) - HITL as Core Principle #8
-- templates/CLAUDE.md - Git workflow HITL implementation
-- Scout documentation - Cost tracking patterns
+- [SIL Principles](./SIL_PRINCIPLES.md) - HITL as a core principle
+- [Technical Charter](./SIL_TECHNICAL_CHARTER.md) - Formal invariants and guarantees
+- [Stewardship Manifesto](./SIL_STEWARDSHIP_MANIFESTO.md) - Values and governance
 
 ---
 

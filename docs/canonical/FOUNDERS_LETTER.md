@@ -45,7 +45,7 @@ Build structures that last.**
 
 **If you want to get started:**
 - [Quickstart](../QUICKSTART.md) - 30-minute guided tour with hands-on example
-- [FAQ](../FAQ.md) - Common questions answered
+- [FAQ](../meta/FAQ.md) - Common questions answered
 
 ---
 

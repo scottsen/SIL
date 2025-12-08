@@ -28,7 +28,7 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ## Featured Innovations
 
-### [Morphogen: Cross-Domain Deterministic Computation](/docs/innovations/MORPHOGEN)
+### [Morphogen: Cross-Domain Deterministic Computation](./MORPHOGEN.md)
 
 **The Problem:** Audio synthesis, physics simulation, circuit design, and CAD require 3-5 separate tools with manual export/import cycles.
 
@@ -40,7 +40,7 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ---
 
-### [GenesisGraph: Verifiable Provenance with Selective Disclosure](/docs/innovations/GENESISGRAPH)
+### [GenesisGraph: Verifiable Provenance with Selective Disclosure](./GENESISGRAPH.md)
 
 **The Problem:** Regulators demand transparency, businesses need IP protection—an impossible choice blocking AI/manufacturing adoption.
 
@@ -52,7 +52,7 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ---
 
-### [Pantheon: Universal Semantic Intermediate Representation](/docs/innovations/PANTHEON)
+### [Pantheon: Universal Semantic Intermediate Representation](./PANTHEON.md)
 
 **The Problem:** Audio → CAD → UI requires manual export/import hell. No composition, no reuse, massive integration overhead.
 
@@ -64,7 +64,7 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ---
 
-### [Agent Ether: Tool Behavior Contracts for Multi-Agent Systems](/docs/innovations/AGENT_ETHER)
+### [Agent Ether: Tool Behavior Contracts for Multi-Agent Systems](./AGENT_ETHER.md)
 
 **The Problem:** Fragmented tool landscape—every tool has different conventions, unpredictable behavior, security blind spots, multi-agent chaos.
 
@@ -76,7 +76,7 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ---
 
-### [Progressive Disclosure: Measured Token Reduction](/docs/innovations/PROGRESSIVE_DISCLOSURE)
+### [Progressive Disclosure: Measured Token Reduction](./PROGRESSIVE_DISCLOSURE.md)
 
 **The Problem:** AI agents waste tokens reading irrelevant code. Traditional approach reads entire files when only structure is needed.
 
@@ -91,26 +91,26 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 ## By Semantic OS Layer
 
 ### Layer 6: Intelligence
-- **[Agent Ether](/docs/innovations/AGENT_ETHER)** - Tool Behavior Contracts, multi-agent coordination
+- **[Agent Ether](./AGENT_ETHER.md)** - Tool Behavior Contracts, multi-agent coordination
 - **BrowserBridge** - Human-AI collaboration via shared browser context
 
 ### Layer 5: Intent
-- **[Pantheon](/docs/innovations/PANTHEON)** - Validation framework, constraint solving
+- **[Pantheon](./PANTHEON.md)** - Validation framework, constraint solving
 
 ### Layer 4: Dynamics
-- **[Morphogen](/docs/innovations/MORPHOGEN)** - Multirate deterministic scheduler (48kHz audio, 240Hz physics)
+- **[Morphogen](./MORPHOGEN.md)** - Multirate deterministic scheduler (48kHz audio, 240Hz physics)
 
 ### Layer 3: Composition
-- **[Pantheon](/docs/innovations/PANTHEON)** - Universal semantic graph representation
-- **[GenesisGraph](/docs/innovations/GENESISGRAPH)** - Provenance graph composition
+- **[Pantheon](./PANTHEON.md)** - Universal semantic graph representation
+- **[GenesisGraph](./GENESISGRAPH.md)** - Provenance graph composition
 - **SUP** - Semantic UI compilation
 
 ### Layer 2: Structures
 - **TiaCAD** - Parametric CAD with SpatialRef unification
-- **[GenesisGraph](/docs/innovations/GENESISGRAPH)** - Provenance data structures (Merkle trees, hash chains)
+- **[GenesisGraph](./GENESISGRAPH.md)** - Provenance data structures (Merkle trees, hash chains)
 
 ### Layer 1: Primitives
-- **[Morphogen](/docs/innovations/MORPHOGEN)** - 40+ computational domains (field, agent, audio, chemistry)
+- **[Morphogen](./MORPHOGEN.md)** - 40+ computational domains (field, agent, audio, chemistry)
 - **RiffStack** - Live performance interface for Morphogen.Audio
 
 ### Layer 0: Substrate
@@ -118,17 +118,17 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 - **Software ↔ Hardware mirror** (Morphogen ↔ Philbrick compile to each other)
 
 ### Meta-Layer: Observability
-- **[Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)** - Progressive disclosure across all layers
+- **[Reveal](./PROGRESSIVE_DISCLOSURE.md)** - Progressive disclosure across all layers
 
 ---
 
 ## By Maturity
 
 ### Production (4 projects) 🟢
-- **[Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)** - v0.17.0, PyPI published, ~2,000 downloads/month
+- **[Reveal](./PROGRESSIVE_DISCLOSURE.md)** - v0.17.0, PyPI published, ~2,000 downloads/month
 - **TiaCAD** - v3.1.2, 1,025 tests, 92% coverage
-- **[GenesisGraph](/docs/innovations/GENESISGRAPH)** - v0.3.0, 320 tests, production cryptography
-- **[Morphogen](/docs/innovations/MORPHOGEN)** - v0.11.0, 1,600+ tests, zero technical debt
+- **[GenesisGraph](./GENESISGRAPH.md)** - v0.3.0, 320 tests, production cryptography
+- **[Morphogen](./MORPHOGEN.md)** - v0.11.0, 1,600+ tests, zero technical debt
 
 ### MVP/Alpha (3 projects) 🟡
 - **RiffStack** - v0.1, 11 operations working, real audio playback
@@ -136,12 +136,12 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 - **BrowserBridge** - Phase 1 development, architecture complete
 
 ### Design Phase (3 projects) 🎨
-- **[Agent Ether](/docs/innovations/AGENT_ETHER)** - v0.1.0-alpha, complete TBC specification
+- **[Agent Ether](./AGENT_ETHER.md)** - v0.1.0-alpha, complete TBC specification
 - **Philbrick** - v0.1.0-alpha, dev board design complete
 - **tia-browser-reveal** - Production-ready validation
 
 ### Pattern Validated (2 projects) 🎖️
-- **[Pantheon](/docs/innovations/PANTHEON)** - v0.1.0-alpha, 2 adapters working (Morphogen + Prism), cross-domain demo proven ✅
+- **[Pantheon](./PANTHEON.md)** - v0.1.0-alpha, 2 adapters working (Morphogen + Prism), cross-domain demo proven ✅
 - **Prism** - Kernel complete (Phase 0-3), 14 syscalls, 9 tests passing ✅
 
 ---
@@ -196,15 +196,15 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 | Project | Layer | Status | Key Innovation |
 |---------|-------|--------|----------------|
-| **[Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)** | Meta | 🟢 Production | 86% token reduction |
-| **[Morphogen](/docs/innovations/MORPHOGEN)** | 1, 4 | 🟢 Production | 40+ domains unified |
+| **[Reveal](./PROGRESSIVE_DISCLOSURE.md)** | Meta | 🟢 Production | 86% token reduction |
+| **[Morphogen](./MORPHOGEN.md)** | 1, 4 | 🟢 Production | 40+ domains unified |
 | **TiaCAD** | 2 | 🟢 Production | SpatialRef unification |
-| **[GenesisGraph](/docs/innovations/GENESISGRAPH)** | 2, 3 | 🟢 Production | Selective disclosure (A/B/C) |
+| **[GenesisGraph](./GENESISGRAPH.md)** | 2, 3 | 🟢 Production | Selective disclosure (A/B/C) |
 | **RiffStack** | 1 | 🟡 MVP | Live performance interface |
 | **SUP** | 3 | 🟡 Alpha | Semantic UI compilation |
 | **BrowserBridge** | 6 | 🟡 Development | Human-AI collaboration |
-| **[Pantheon](/docs/innovations/PANTHEON)** | 3, 5 | 🎨 Design | Universal semantic IR |
-| **[Agent Ether](/docs/innovations/AGENT_ETHER)** | 6 | 🎨 Design | Tool Behavior Contracts |
+| **[Pantheon](./PANTHEON.md)** | 3, 5 | 🎨 Design | Universal semantic IR |
+| **[Agent Ether](./AGENT_ETHER.md)** | 6 | 🎨 Design | Tool Behavior Contracts |
 | **Philbrick** | 0 | 🎨 Design | Analog/digital hybrid |
 | **Prism** | 3 | 🎨 Specification | Set stack queries |
 | **tia-browser-reveal** | Meta | 🎨 Ready | Browser extension |
@@ -214,19 +214,19 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 ## Explore the Innovations
 
 **By Problem Domain:**
-- **Audio/Music Production** → [Morphogen](/docs/innovations/MORPHOGEN), RiffStack
-- **AI/ML Tooling** → [Agent Ether](/docs/innovations/AGENT_ETHER), [Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE)
-- **CAD/Manufacturing** → TiaCAD, [Morphogen](/docs/innovations/MORPHOGEN), [GenesisGraph](/docs/innovations/GENESISGRAPH)
-- **Compliance/Regulation** → [GenesisGraph](/docs/innovations/GENESISGRAPH)
-- **Cross-Domain Workflows** → [Pantheon](/docs/innovations/PANTHEON)
-- **Hardware Design** → Philbrick, [Morphogen](/docs/innovations/MORPHOGEN)
+- **Audio/Music Production** → [Morphogen](./MORPHOGEN.md), RiffStack
+- **AI/ML Tooling** → [Agent Ether](./AGENT_ETHER.md), [Reveal](./PROGRESSIVE_DISCLOSURE.md)
+- **CAD/Manufacturing** → TiaCAD, [Morphogen](./MORPHOGEN.md), [GenesisGraph](./GENESISGRAPH.md)
+- **Compliance/Regulation** → [GenesisGraph](./GENESISGRAPH.md)
+- **Cross-Domain Workflows** → [Pantheon](./PANTHEON.md)
+- **Hardware Design** → Philbrick, [Morphogen](./MORPHOGEN.md)
 
 **By Research Theme:**
-- **Determinism & Verifiability** → [Morphogen](/docs/innovations/MORPHOGEN), [GenesisGraph](/docs/innovations/GENESISGRAPH), TiaCAD
-- **Progressive Disclosure** → [Reveal](/docs/innovations/PROGRESSIVE_DISCLOSURE), [GenesisGraph](/docs/innovations/GENESISGRAPH), SUP
-- **Semantic Types** → [Morphogen](/docs/innovations/MORPHOGEN), [Pantheon](/docs/innovations/PANTHEON), TiaCAD
-- **Agent Coordination** → [Agent Ether](/docs/innovations/AGENT_ETHER), BrowserBridge
-- **Cross-Domain Composition** → [Morphogen](/docs/innovations/MORPHOGEN), [Pantheon](/docs/innovations/PANTHEON), Philbrick
+- **Determinism & Verifiability** → [Morphogen](./MORPHOGEN.md), [GenesisGraph](./GENESISGRAPH.md), TiaCAD
+- **Progressive Disclosure** → [Reveal](./PROGRESSIVE_DISCLOSURE.md), [GenesisGraph](./GENESISGRAPH.md), SUP
+- **Semantic Types** → [Morphogen](./MORPHOGEN.md), [Pantheon](./PANTHEON.md), TiaCAD
+- **Agent Coordination** → [Agent Ether](./AGENT_ETHER.md), BrowserBridge
+- **Cross-Domain Composition** → [Morphogen](./MORPHOGEN.md), [Pantheon](./PANTHEON.md), Philbrick
 
 ---
 
@@ -251,15 +251,15 @@ Build semantic infrastructure that enables fundamentally different relationships
 ## Get Involved
 
 **Explore the Innovations:**
-- [Morphogen - Cross-Domain Computation](/docs/innovations/MORPHOGEN)
-- [GenesisGraph - Verifiable Provenance](/docs/innovations/GENESISGRAPH)
-- [Pantheon - Universal Semantic IR](/docs/innovations/PANTHEON)
-- [Agent Ether - Tool Behavior Contracts](/docs/innovations/AGENT_ETHER)
-- [Progressive Disclosure - Token Efficiency](/docs/innovations/PROGRESSIVE_DISCLOSURE)
+- [Morphogen - Cross-Domain Computation](./MORPHOGEN.md)
+- [GenesisGraph - Verifiable Provenance](./GENESISGRAPH.md)
+- [Pantheon - Universal Semantic IR](./PANTHEON.md)
+- [Agent Ether - Tool Behavior Contracts](./AGENT_ETHER.md)
+- [Progressive Disclosure - Token Efficiency](./PROGRESSIVE_DISCLOSURE.md)
 
 **Learn More:**
-- [SIL Manifesto](/docs/canonical/SIL_MANIFESTO) - Why semantic infrastructure matters
-- [Semantic OS Architecture](/docs/canonical/SIL_SEMANTIC_OS_ARCHITECTURE) - Complete 7-layer design
+- [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Why semantic infrastructure matters
+- [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md) - Complete 7-layer design
 - [GitHub Organization](https://github.com/Semantic-Infrastructure-Lab) - All 12 projects
 
 **Use the Tools:**
