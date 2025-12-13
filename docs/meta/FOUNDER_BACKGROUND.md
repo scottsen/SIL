@@ -1,103 +1,143 @@
 # Scott A. Senkeresty
 
-**Founder, Semantic Infrastructure Lab**
+**Founder & Chief Architect, Semantic Infrastructure Lab**
 
-Scott Senkeresty founded SIL to build semantic substrate for AI—infrastructure where representations are explicit, transformations are traceable, and reasoning paths can be inspected and composed with human judgment.
+Scott Senkeresty builds infrastructure that makes complexity inspectable.
 
----
-
-## Background
-
-Systems architect and infrastructure builder with four decades of experience across distributed systems, business intelligence, and semantic infrastructure. The work has always focused on building substrate that enables others.
-
-**Education:** Computer Science, University of Colorado Boulder (1998-2001)
-**SIL Founded:** 2023
+For over 40 years—from published work at age 13 to distributed systems at Microsoft to consulting and startups to semantic infrastructure—he's been solving the same problem: how do you turn dangerous black boxes into tools that empower people?
 
 ---
 
-## Career Arc
+## The Pattern
 
-**Microsoft Research & Engineering (1994-2010)** — 16 years on distributed systems and high-stakes engineering:
-- Distributed Systems Research (2001-2003): Peer-to-peer infrastructure with cryptographic identity, before Bitcoin
-- Release engineering on systems serving hundreds of millions of devices
-- Built analysis tools that let researchers inspect complex systems safely
+**Early Achievement (1984)**
 
-**Business Intelligence Era (2010s)** — Consulting (Tiny Lizard). Helped dozens of organizations transform data into actionable insights. 50+ educational posts. Active community contributor.
+At age 13, Scott published "Colorful Sprites" in *Compute's Gazette* (December 1984), explaining multi-color sprite techniques for the Commodore 64. The pattern started here: making invisible techniques visible, making complexity accessible.
 
-**Semantic OS Era (2020s)** — Founded SIL. Designed 7-layer Semantic Operating System. Built production tools: Reveal, Morphogen, GenesisGraph, TiaCAD.
+**Microsoft (1997-2010)**
 
-The pattern: Infrastructure thinking across evolving landscapes. Build substrate, not applications. Enable others.
+For 13 years, Scott worked across distributed systems and security infrastructure:
 
----
+- **Peer-to-Peer Infrastructure Team:** Built PNRP (Peer Name Resolution Protocol)—serverless distributed name resolution with cryptographic pub/priv key identities. This was 2001-2003, **before Bitcoin existed**. While the team built the complex protocols, Scott wrote the wrapper APIs that made PNRP accessible to normal developers. Same pattern: make complexity accessible.
 
-## What's Been Built
+- **Anti-Malware/Security:** Built malware scanners and analysis tools that let researchers inspect dangerous code without running it. Make the dangerous safe through transparency.
 
-### Production Systems
-| System | Version | Tests | Status |
-|--------|---------|-------|--------|
-| **Reveal** | v0.18.0 | 103 | Production, PyPI |
-| **Morphogen** | v0.11.0 | 900+ | Production |
-| **GenesisGraph** | v0.3.0 | 363 | Production |
-| **TiaCAD** | v3.1.2 | 1080+ | Production |
+- **Office Division (1997):** Met Rob Collie while building tools for Office setup testing—a 28-year friendship that began with Scott's consistent philosophy: "built tools to make the job of the smarter engineers around me easier."
 
-### Research Infrastructure
-- **TIA** — Development environment where SIL is built. 14,549 files, 60 projects.
-- **Beth** — Knowledge substrate. <400ms semantic search, 1,402 topics.
+**Consulting & Startups (2010-2025)**
 
-### Active Development
-- RiffStack, SUP, BrowserBridge (Alpha/MVP)
-- Pantheon, Agent Ether, Philbrick, Prism (Design phase)
+After Microsoft, Scott worked on consulting and startup endeavors, including founding **Tiny Lizard**, a BI consulting firm where he helped dozens of companies transform overwhelming data into actionable decisions.
+
+His philosophy: "Crushing The Nouns"—stop generating static reports (nouns) and start building systems that drive action (verbs). He helped organizations "feel their data to optimize decisions," writing 50+ educational blog posts and becoming active in the Power Pivot community.
+
+**TIA & SIL (2023-2025)**
+
+When the ChatGPT API became available in 2023, Scott began building **TIA (The Intelligent Agent)**—a transparent, named agent demonstrating how AI can extend human reasoning when every step is visible. TIA evolved through various forms, proving that progressive disclosure, semantic memory, and inspectable reasoning are not just theoretical concepts but practical necessities.
+
+In 2025, Scott founded the **Semantic Infrastructure Lab** to build what modern AI still lacks: explicit semantic substrate, inspectable reasoning, and deterministic collaboration infrastructure. SIL is the formalization of decades of infrastructure thinking applied to the problem of intelligence.
 
 ---
 
-## Philosophy
+## What He's Built
 
-**Clarity Over Cleverness** — Write code that teaches itself. Structure before optimization.
+SIL isn't vaporware. It's working systems:
 
-**Infrastructure Over Applications** — Build substrate that enables others. Long-lived artifacts.
+**Production Tools:**
+- **Reveal** (v0.19.0, 103 tests) - Semantic code explorer, published to PyPI
+- **Morphogen** (v0.11.0, 900+ tests) - Multi-domain simulation engine
+- **GenesisGraph** (v0.3.0, 363 tests) - Provenance infrastructure
+- **TiaCAD** (v3.1.2, 1080+ tests) - Computational design tools
 
-**Openness by Default** — MIT/Apache licenses. Public documentation.
+**Research Infrastructure:**
+- **TIA** - Development environment: 14,549 files, 60 projects, 1,900+ sessions
+- **Beth** - Knowledge substrate: <400ms semantic search across 8,459 files, 28,750 keywords
 
-**Evidence-First** — Show what's built, not vision. Measured results before philosophy.
-
-**Humility & Provenance** — Work over person. Honor lineage.
-
-### The Continuation
-
-Scott didn't invent these values. He continues a tradition: Turing, K&R + UNIX, Jeremy Howard, 3Blue1Brown, and every teacher who wrote knowledge down.
-
----
-
-## Working Methods
-
-Scott works with **Tia**, SIL's Chief Semantic Agent—a transparent, named agent contributing decomposition, pattern discovery, and structural scaffolding. This collaboration demonstrates how transparent agents extend human reasoning when the system reveals every step.
+**Active Development:**
+- Agent Ether, SUP, RiffStack, Prism, Philbrick, and more
 
 ---
 
-## Current State (December 2025)
+## The Philosophy
 
-- **GitHub:** [Semantic-Infrastructure-Lab](https://github.com/Semantic-Infrastructure-Lab) (13 repositories)
-- **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
-- **Production:** 4 shipped, 3 MVP/Alpha, 4 design-phase systems
+**Inspection Without Danger**
+- 20+ years: Malware scanners → inspectable intelligence
+- Same principle: make dangerous/opaque systems safe through transparency
+
+**Actionability by Design**
+- Reports → verbs not nouns
+- Intelligence → decisions not output
+- Systems → tools not black boxes
+
+**Infrastructure That Empowers**
+- Not the hero who saves you
+- The builder who makes you capable
+- 40+ years: tools for others, not applications for customers
+
+**Pragmatism + Vision**
+- Tests before theorizing
+- Ships working systems
+- But building computational substrate for the next generation
+
+**Honest Builder**
+- In an age of hype: transparency
+- In an age of black boxes: openness
+- Track record over claims
+- Execution over vision statements
 
 ---
 
 ## Why SIL
 
-AI requires **semantic infrastructure**—substrate where representations are explicit, transformations are traceable, and reasoning paths can be inspected and composed with human judgment.
+Scott believes we're building the future of intelligence out of "rotting wood"—stochastic, hallucinatory, opaque models.
 
-SIL builds this: persistent semantic memory, unified intermediate representations, deterministic engines, multi-agent orchestration, and interfaces where every cognitive layer remains visible.
+**His goal is to replace the wood with steel.**
 
-The work is difficult, long-term, and necessary.
+Modern AI systems are powerful but structurally incomplete:
+- No explicit meaning (concepts aren't stable, machine-operable structures)
+- Brittle reasoning (inference chains can't be inspected or validated)
+- Weak memory (systems fragment context, can't maintain semantic continuity)
+- Fragmented tools (code, CAD, simulation, workflows live in incompatible ecosystems)
+- Unreliable agents (without shared structure, behavior is inconsistent)
+- Poor provenance (transformations and assumptions are missing)
+
+**These aren't bugs. They're symptoms of a missing layer: semantic infrastructure.**
+
+SIL builds the alternative: persistent semantic memory, universal intermediate representations, deterministic engines, multi-agent orchestration, and interfaces where every cognitive layer remains visible.
 
 ---
 
-## Related Reading
+## Education & Background
 
-- [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
-- [Founder's Letter](../canonical/FOUNDERS_LETTER.md)
-- [Manifesto](../canonical/SIL_MANIFESTO.md)
-- [Project Index](../../projects/PROJECT_INDEX.md)
+**Education:** Bachelor's and Master's degrees in Computer Science, California Polytechnic State University, San Luis Obispo
+
+**Current Work:** Scott collaborates with **TIA**, SIL's Chief Semantic Agent—a transparent, named agent contributing decomposition, pattern discovery, and structural scaffolding. This collaboration demonstrates the core SIL thesis: transparent agents extend human reasoning when the system reveals every step.
+
+---
+
+## The Through-Line
+
+This isn't four separate careers. It's one 40+ year mission:
+
+- Age 13: Making sprite techniques accessible → published work
+- Microsoft: Making distributed systems accessible → built simple APIs for complex protocols
+- Microsoft: Making malware inspectable → built scanners for researchers
+- Consulting: Making data actionable → helped companies "feel their data"
+- SIL: Making intelligence inspectable → building Cognitive OS infrastructure
+
+**Same philosophy across all eras:**
+- Make complexity inspectable
+- Empower others through infrastructure
+- Safety through transparency
+- Pragmatic execution
+- Actionability over information
+
+---
+
+## Contact & Links
+
+- **GitHub:** [Semantic-Infrastructure-Lab](https://github.com/Semantic-Infrastructure-Lab)
+- **Website:** [semanticinfrastructurelab.org](https://semanticinfrastructurelab.org)
+- **LinkedIn:** [Scott Senkeresty](https://www.linkedin.com/in/scottsenkeresty)
 
 ---
 
