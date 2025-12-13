@@ -133,7 +133,194 @@ This protects the system from catastrophic misinterpretation at the lowest level
 
 ---
 
-## 3. Who Gets Access to the "Why"? A Hierarchy of Intent
+## 3. Authority vs Autonomy — The Authorization Primitive
+
+**Key insight**: Agency (autonomy in execution) ≠ Authority (permission to act)
+
+Each hierarchical level has:
+- **Autonomy** — how much discretion during execution
+- **Authority** — what decisions you're permitted to make
+
+These are **orthogonal OS primitives**. Autonomy without authority = unauthorized agency. Authority without autonomy = incapable agent.
+
+### Authority as OS-Level Primitive
+
+In the Semantic OS, authority is encoded via **AuthorizationGrant**:
+
+```python
+@dataclass
+class AuthorizationGrant:
+    principal: str              # Who grants permission (DID)
+    agent: str                  # Who receives permission (DID)
+    scope: List[str]            # What actions permitted
+    level: AgencyLevel          # Strategic/Operational/Tactical/Execution
+    constraints: Dict           # Budgets, limits, restrictions
+    valid_from: datetime
+    valid_until: datetime
+    revocable: bool = True
+```
+
+**Stored in GenesisGraph**, checked by Agent Ether before delegation.
+
+### Authority Hierarchy Principle
+
+**Authority must narrow as you descend levels**:
+
+| Level | Autonomy | Authority Scope |
+|-------|----------|----------------|
+| **Strategic** | High discretion | Broad (reshape goals, reallocate resources) |
+| **Operational** | Medium discretion | Medium (sequence work, optimize within goals) |
+| **Tactical** | Limited discretion | Narrow (adapt methods, local decisions) |
+| **Execution** | Zero discretion | Minimal (deterministic operations only) |
+
+**Delegation rule**: When granting authority downward, **scope must narrow or remain equal** (never widen).
+
+```python
+# Strategic agent grants to Operational agent
+strategic_auth = AuthorizationGrant(
+    scope=["plan-campaign", "allocate-budget", "hire-agents"],
+    level=AgencyLevel.STRATEGIC,
+    constraints={"budget_total": 1_000_000}
+)
+
+# Operational agent MAY subdelegate, but scope narrows
+operational_auth = AuthorizationGrant(
+    scope=["allocate-budget"],  # Subset of strategic scope
+    level=AgencyLevel.OPERATIONAL,
+    constraints={"budget_total": 100_000},  # Narrower constraint
+    derived_from=strategic_auth.grant_id  # Provenance
+)
+
+# Tactical agent receives even narrower scope
+tactical_auth = AuthorizationGrant(
+    scope=["allocate-budget"],  # Same action
+    level=AgencyLevel.TACTICAL,
+    constraints={"budget_total": 10_000},  # Further narrowed
+    derived_from=operational_auth.grant_id
+)
+```
+
+**Violation**: Execution-level agents **CANNOT** grant authority upward or peer-to-peer (would violate hierarchy).
+
+### Separation from TAP (Trust Assertion Protocol)
+
+**TAP proves competence. Authorization proves permission.**
+
+Before delegation, check **both**:
+
+```python
+# Step 1: Check capability (TAP)
+tap = query_tap(agent, "has-capability", "plan-campaign")
+if not tap:
+    return Error("Agent lacks capability")
+
+# Step 2: Check authorization
+auth = query_authorization(agent, "plan-campaign")
+if not auth or auth.expired():
+    return Error("Agent lacks permission or authorization expired")
+
+# Step 3: Validate level-appropriate scope
+if auth.level != required_level:
+    return Error("Authority level mismatch")
+
+# All checks pass → delegate
+delegate(agent, task)
+```
+
+**Example failure mode**:
+- Agent has `has-capability: deploy-production` (TAP)
+- Agent **lacks** `AuthorizationGrant` for deploy-production
+- Deployment blocked (agent **can** but **may not**)
+
+### Integration with Agency Levels
+
+**Each level's authority formalized**:
+
+```python
+# Strategic: Can reshape goals
+strategic_auth = AuthorizationGrant(
+    scope=["define-objectives", "reallocate-resources", "modify-strategy"],
+    level=AgencyLevel.STRATEGIC,
+    constraints={"review_period_days": 90}  # Long-term changes
+)
+
+# Operational: Can sequence and optimize
+operational_auth = AuthorizationGrant(
+    scope=["create-plan", "optimize-workflow", "allocate-subset-budget"],
+    level=AgencyLevel.OPERATIONAL,
+    constraints={"plan_duration_weeks": 4}  # Medium-term
+)
+
+# Tactical: Can adapt methods
+tactical_auth = AuthorizationGrant(
+    scope=["select-method", "adapt-parameters", "retry-on-failure"],
+    level=AgencyLevel.TACTICAL,
+    constraints={"max_retries": 3}  # Short-term, local
+)
+
+# Execution: Deterministic only
+execution_auth = AuthorizationGrant(
+    scope=["execute-tool", "read-input", "write-output"],
+    level=AgencyLevel.EXECUTION,
+    constraints={"timeout_seconds": 30}  # Immediate, bounded
+)
+```
+
+### Delegation Depth Limits
+
+**Prevent unbounded delegation chains**:
+
+```python
+# Principal grants with delegation depth limit
+root_auth = AuthorizationGrant(
+    principal="did:user:alice",
+    agent="did:agent:strategic-planner",
+    delegation_depth=2,  # Can delegate twice more
+    scope=["plan-campaign"]
+)
+
+# Strategic → Operational (depth 1 remaining)
+sub_auth_1 = root_auth.subdelegate(
+    agent="did:agent:workflow-coordinator",
+    delegation_depth=1  # Decremented
+)
+
+# Operational → Tactical (depth 0 remaining)
+sub_auth_2 = sub_auth_1.subdelegate(
+    agent="did:agent:task-executor",
+    delegation_depth=0  # Cannot delegate further
+)
+
+# Tactical attempts to delegate → BLOCKED
+sub_auth_3 = sub_auth_2.subdelegate(...)  # ❌ Error: delegation_depth exceeded
+```
+
+**Why this matters**: Prevents "infinite delegation loops" (acknowledged anti-pattern, now enforced).
+
+### Authority Validation in Agent Ether
+
+**Before delegating task to agent, Agent Ether validates**:
+
+1. **Grant exists** for (agent, action)
+2. **Not expired** (temporal bounds)
+3. **Not revoked** (revocation status)
+4. **Action in scope** (action ∈ grant.scope)
+5. **Constraints satisfied** (budgets, limits)
+6. **Level appropriate** (level matches task complexity)
+7. **Delegation depth** (if subdelegating, depth allows)
+
+**Only if all pass**: delegation proceeds.
+
+### See Also
+
+- **AUTHORIZATION_PROTOCOL.md** — Complete AuthorizationGrant specification
+- **TRUST_ASSERTION_PROTOCOL.md** — TAP vs Authorization distinction
+- **MULTI_AGENT_PROTOCOL_PRINCIPLES.md** — Horizontal coordination (delegation is vertical)
+- **SIL_GLOSSARY.md** — Authorization, AuthorizationGrant, DelegationGrant definitions
+
+---
+
+## 4. Who Gets Access to the "Why"? A Hierarchy of Intent
 
 Both organizations and AI systems fail when either **too much** or **too little** "why" is shared.
 

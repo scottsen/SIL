@@ -62,6 +62,84 @@ Today's trust signals are:
 
 ---
 
+## TAP vs Authorization — A Critical Distinction
+
+**TAP proves trust and capability. Authorization proves permission.**
+
+This is a fundamental architectural distinction in the Semantic OS:
+
+| Concept | What It Proves | Semantic OS Primitive | Example |
+|---------|---------------|---------------------|---------|
+| **Trust Assertion (TAP)** | "Agent A *can* do task T" | TAP (this protocol) | `has-capability: deploy-production` |
+| **Authorization** | "Agent A *may* do task T with constraints C" | AuthorizationGrant (Layer 1) | `permission: deploy-prod, budget: $1000, expires: 2025-12-31` |
+
+### Why This Matters
+
+**OS Architecture Perspective:**
+
+Every multi-agent operating system needs two distinct permission models:
+1. **Capability Model** — what the agent is technically able to do (skills, tools, access)
+2. **Permission Model** — what the agent is granted authority to do (scope, constraints, expiration)
+
+TAP provides (1). Authorization provides (2). Both are required.
+
+**Agency Law Perspective:**
+
+In legal agency theory (*Restatement Third of Agency*), an agent needs:
+1. **Competence** — ability to perform the task
+2. **Actual authority** — permission from principal with defined scope
+
+TAP provides evidence of (1). Authorization provides (2).
+
+**Practical Consequence:**
+
+An agent with `has-capability: deploy-production` (TAP) can *technically* deploy, but without an **AuthorizationGrant** (permission from principal with scope/budget/expiration), that deployment would constitute **unauthorized agency** in both legal and OS security terms.
+
+### Integration Pattern
+
+Before Agent Ether delegates a task, it checks **both**:
+
+```python
+# Step 1: Check capability (TAP)
+tap_assertion = query_tap(agent_id, "has-capability", "deploy-production")
+if not tap_assertion:
+    return Error("Agent lacks capability")
+
+# Step 2: Check authorization (separate primitive)
+auth_grant = query_authorization(agent_id, "deploy-production")
+if not auth_grant or auth_grant.expired():
+    return Error("Agent lacks permission or authorization expired")
+
+# Step 3: Validate constraints
+if exceeds_budget(task, auth_grant.budget):
+    return Error("Task exceeds authorized budget")
+
+# Both checks pass → delegate
+delegate(agent_id, task)
+```
+
+### Failure Modes Without This Distinction
+
+**If TAP = Authorization (conflated)**:
+- Agent with capability auto-granted permission (security risk)
+- No scope/budget/expiration enforcement (resource exhaustion)
+- No audit trail of permission grants (compliance failure)
+- Cannot revoke permission without removing capability (inflexible)
+
+**With TAP + Authorization (separated)**:
+- Agent needs both capability AND explicit permission grant
+- Permission has scope, constraints, temporal bounds
+- Full audit trail (GenesisGraph edges for both TAP and AuthorizationGrant)
+- Revoke permission while preserving capability record
+
+### See Also
+
+- **AUTHORIZATION_PROTOCOL.md** — Complete specification of AuthorizationGrant primitive
+- **HIERARCHICAL_AGENCY_FRAMEWORK.md** — Authority levels and delegation rules
+- **SIL_GLOSSARY.md** — Definitions of Authorization, AuthorizationGrant, TAP
+
+---
+
 ## Core Data Model
 
 ### Trust Assertion Schema

@@ -240,6 +240,7 @@ genesisgraph validate workflow.gg.yaml --verify-profile
 - **Morphogen (Layer 1/4):** Deterministic execution - Provenance for computational workflows
 - **Agent Ether (Layer 6):** Multi-agent systems - Verifiable agent actions and decisions
 - **Semantic Trust Fabric:** Trust assertions stored as typed graph edges with full provenance
+- **IPFS Storage (Layer 0):** Content-addressed artifact storage - **See:** [Distributed Storage Architecture](../architecture/DISTRIBUTED_STORAGE_ARCHITECTURE.md) for integration strategy
 - **All SIL projects:** Universal provenance layer enables "show your work" across the stack
 
 ---

@@ -1,8 +1,9 @@
-# **SIL Glossary (v2.0)**
+# **SIL Glossary (v2.2)**
 
 **Canonical definitions for the Semantic Operating System and its components.**
 
-**Last Updated**: 2025-12-07
+**Last Updated**: 2025-12-12
+**Terms**: 119 (includes 8 Governance OS Primitives from infinite-quicksilver-1212)
 
 ---
 
@@ -36,6 +37,14 @@ A declared, typed parameter or condition associated with an operator invocation 
 
 A complete, traceable, tamper-evident record of all transformations, decisions, and state changes within a workflow or system. Essential for compliance and reproducibility.
 
+### **Authorization**
+
+Explicit permission to perform actions within defined scope and constraints (distinct from capability/trust). An OS-level primitive providing the permission model complementary to TAP's capability model. Grants specify: principal (who grants), agent (who receives), scope (what actions), constraints (budgets/limits), and temporal bounds. See: AuthorizationGrant, AUTHORIZATION_PROTOCOL.md, TRUST_ASSERTION_PROTOCOL.md (TAP vs Authorization).
+
+### **AuthorizationGrant**
+
+Semantic OS primitive (Layer 1) encoding explicit permission for agent actions. Schema: `{ principal, agent, scope, actions, constraints, valid_from, valid_until }`. Distinct from TAP assertions (which prove capability). Required for operations with side effects to establish legal/security authority. Stored in GenesisGraph, checked by Agent Ether before delegation. See: AUTHORIZATION_PROTOCOL.md, HIERARCHICAL_AGENCY_FRAMEWORK.md.
+
 ---
 
 ## B
@@ -51,6 +60,10 @@ Knowledge graph and semantic search system within TIA, providing topic-based exp
 ### **Blast Radius**
 
 The maximum scope of impact or damage a tool, operation, or failure can cause within the system. Used for security analysis and permission scoping.
+
+### **BindingAct**
+
+OS primitive (Layer 5) for cryptographically-signed user confirmations on irreversible operations. Design pattern: visual distinction + explicit confirmation + time delay + cryptographic signature. Addresses "apparent authority" risk where UX signifiers create legal obligations (semiotics: what user sees = what system/court interprets as consent). Distinguishes binding consent from casual interactions. See: UX_TRUST_BOUNDARY.md, SIL_SAFETY_THRESHOLDS.md.
 
 ### **BrowserBridge**
 
@@ -92,9 +105,13 @@ A semantic object representing an agent's choice, including operator selection, 
 
 Any semantic object produced through a transformation or operator application, with explicit provenance linking to inputs.
 
+### **DelegationGrant**
+
+OS primitive (Layer 3) formalizing agent-to-agent delegation with explicit constraints. Schema: `{ delegator, delegatee, task_scope, max_depth, can_subdelegate, scope_narrowing }`. Prevents unbounded delegation chains ("infinite loops"). Enforces: depth limits, scope narrowing at each level, chain reconstructability in provenance. Required for safe multi-agent coordination. See: HIERARCHICAL_AGENCY_FRAMEWORK.md (delegation constraints section).
+
 ### **Determinism Profile**
 
-Classification of an operator's reproducibility guarantee: deterministic (bitwise identical), bounded (within tolerance), or non-reproducible (stochastic). Declared in semantic contracts.
+OS primitive (Layer 4) classifying operator reproducibility: DETERMINISTIC (exact replay), BOUNDED (equivalent within tolerance), STOCHASTIC (approximate, inherently nondeterministic). Declared in operator metadata. Paired with ExecutionBudget to track cumulative nondeterminism and escalate when replay becomes unreliable. See: DETERMINISM_MANAGEMENT.md.
 
 ### **Domain Module**
 
@@ -116,9 +133,17 @@ A typed semantic connection in a Pantheon graph carrying domain-specific metadat
 
 A computational component that executes operators over USIR structures. Engines emit typed outputs, validation artifacts, diagnostics, and complete provenance metadata.
 
+### **Epistemic Type**
+
+OS primitive (Layer 0) labeling evidence quality in provenance edges. Enum: OBSERVATION (direct evidence), CLAIM (inference/derived), DECISION (binding choice), ASSUMPTION (default/unverified), ASSERTION (trust-based). Prevents "claim inflation" where agent inferences masquerade as ground truth. High-stakes operators require OBSERVATION-level evidence. Confidence decay rules track claims-based-on-claims. See: EPISTEMIC_PROVENANCE.md, SEMANTIC_OBSERVABILITY.md.
+
 ### **Equivalence Relation**
 
 A formally defined criterion used to evaluate reproducibility for non-deterministic or approximate operator outputs.
+
+### **Execution Budget**
+
+OS primitive (Layer 4) tracking cumulative nondeterminism during workflow execution. Paired with DeterminismProfile. Tracks entropy sources (LLM sampling, web calls, time, filesystem) and escalates when `consumed > limit`, signaling replay unreliability. Prevents silent replay failures in forensic reconstruction. See: DETERMINISM_MANAGEMENT.md.
 
 ### **Execution Context**
 
@@ -179,6 +204,10 @@ Four-tier decision-making model defining agency scope: Strategic (meta-planning)
 ### **Intent-Execution Alignment**
 
 Primary health signal in semantic observability measuring how well system outputs match user intentions. Detected through vector embeddings and multi-dimensional fitness metrics.
+
+### **IntentContract**
+
+OS primitive (Layer 5) formalizing user intent with ambiguity scoring and escalation thresholds. Schema: `{ goal, constraints, preferences, ambiguity_score (0.0-1.0), escalation_threshold }`. Classification: AUTONOMOUS (<0.3, agent decides), BOUNDED_DISCRETION (0.3-0.7, agent proposes), MANDATORY_ESCALATION (>0.7, agent clarifies first). Enables breach detection when execution deviates from intent constraints. Prevents autonomous action on ambiguous goals. See: INTENT_VERIFICATION_PROTOCOL.md, MULTI_AGENT_PROTOCOL_PRINCIPLES.md.
 
 ### **Invariant**
 
@@ -554,16 +583,17 @@ A versioned, structured operator graph with explicit dependencies, execution sem
 
 ## Summary Statistics
 
-- **Total Terms**: 112 (v1: 46, v2: +62, v2.1: +4)
+- **Total Terms**: 119 (v1: 46, v2: +62, v2.1: +4, v2.2: +7)
 - **SIL Projects**: 12/12 defined
 - **7-Layer Architecture**: Complete
 - **Tool Behavior Contract**: Complete
 - **Pantheon Concepts**: Complete
 - **Observability & Agency**: Complete
-- **Governance**: Complete
+- **Governance OS Primitives**: Complete
 - **Trust (TAP)**: Complete
 
 **Version History**:
 - v1.0 (2025-12-05): Initial 46 terms, core semantic OS concepts
 - v2.0 (2025-12-07): Expanded to 108 terms, added projects, architecture, TBC, Pantheon, observability, agency framework
 - v2.1 (2025-12-08): Added Trust Assertion Protocol (TAP) terms: TAP, Trust Assertion, Trust Claim Types, Semantic Passport
+- v2.2 (2025-12-12): Added Governance OS Primitives: Authorization, AuthorizationGrant, BindingAct, DelegationGrant, DeterminismProfile (enhanced), EpistemicType, ExecutionBudget, IntentContract

@@ -2,6 +2,12 @@
 
 > *Structure before content - navigate codebases efficiently*
 
+**Related Documentation:**
+- [Progressive Disclosure Guide](../canonical/PROGRESSIVE_DISCLOSURE_GUIDE.md) - Comprehensive tutorial on implementing progressive disclosure across SIL systems
+- [Reveal](../tools/REVEAL.md) - Tool implementing progressive disclosure for code exploration
+
+---
+
 ## The Problem
 
 **LLM Context Costs Explode with Large Codebases**

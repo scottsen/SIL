@@ -28,6 +28,26 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ---
 
+### [Distributed Storage Architecture](DISTRIBUTED_STORAGE_ARCHITECTURE.md) ⭐⭐ Infrastructure Design
+**20-30 minutes** | IPFS integration strategy for semantic memory, identity, and provenance
+
+**Research & Planning** - Explores content-addressed distributed storage for SIL infrastructure.
+
+**Key Topics:**
+- Layer 0 (Semantic Memory) IPFS integration
+- GenesisGraph provenance with content-addressed artifacts
+- DID:IPFS method for agent identity
+- Decentralized agent discovery via IPFS DHT
+- Phased implementation strategy (12-month roadmap)
+
+**Who should read this:**
+- ✅ Working on Layer 0 (Semantic Memory) infrastructure
+- ✅ Implementing GenesisGraph storage backends
+- ✅ Designing distributed agent systems
+- ✅ Interested in decentralized knowledge infrastructure
+
+---
+
 ## How This Relates to Other Docs
 
 ```
@@ -133,7 +153,7 @@ After reading this guide:
 
 ---
 
-**Last Updated:** 2025-11-30
-**Documents:** 1 (Unified Architecture Guide)
-**Reading Time:** ~45 minutes
+**Last Updated:** 2025-12-10
+**Documents:** 2 (Unified Architecture Guide, Distributed Storage Architecture)
+**Reading Time:** ~60-75 minutes
 **Status:** Complete and stable

@@ -26,6 +26,31 @@ Meta-Layer: Observability → Reveal (progressive disclosure)
 
 ---
 
+## About This Directory
+
+**Purpose:** Conceptual descriptions of SIL's key innovations—the "what" and "why" of our novel contributions.
+
+**Innovations vs. Tools vs. Canonical Concepts:**
+
+- **Innovations** (this directory): High-level descriptions of novel technical contributions
+- **Tools** (`../tools/`): Practical usage guides for implemented systems
+- **Canonical** (`../canonical/`): Foundational principles and frameworks
+
+Some innovations span multiple categories. For example:
+- **Progressive Disclosure** is both an innovation (`PROGRESSIVE_DISCLOSURE.md`) and a canonical concept with comprehensive guide (`../canonical/PROGRESSIVE_DISCLOSURE_GUIDE.md`)
+- **Reveal** implements progressive disclosure and has tool documentation (`../tools/REVEAL.md`)
+
+**Innovations → Tools Mapping:**
+
+- **Progressive Disclosure** → Implemented in [Reveal](../tools/REVEAL.md)
+- **Agent Ether** → Tool documentation coming (70% implemented)
+- **Morphogen** → Production-ready, tool docs in planning
+- **GenesisGraph** → Production-ready, tool docs in planning
+
+**See also:** `../tools/README.md` for the inverse mapping (tools → innovations)
+
+---
+
 ## Featured Innovations
 
 ### [Morphogen: Cross-Domain Deterministic Computation](./MORPHOGEN.md)

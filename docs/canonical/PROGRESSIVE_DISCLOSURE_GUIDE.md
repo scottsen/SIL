@@ -5,6 +5,11 @@
 Version: 1.0
 Last Updated: 2025-12-04
 
+**Related Documentation:**
+- [Progressive Disclosure Innovation](../innovations/PROGRESSIVE_DISCLOSURE.md) - High-level innovation description with token economics
+- [Reveal](../tools/REVEAL.md) - Production implementation for code exploration
+- [Reveal Introduction Article](../articles/reveal-introduction.md) - Accessible introduction to progressive disclosure in practice
+
 ---
 
 ## Table of Contents

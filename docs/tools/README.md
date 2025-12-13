@@ -26,6 +26,20 @@ Tools designed for agents from day one, with:
 
 ---
 
+## Tools → Innovations Mapping
+
+Some tools implement specific SIL innovations:
+
+- **Reveal** → Implements [Progressive Disclosure](../innovations/PROGRESSIVE_DISCLOSURE.md) innovation
+- **Beth** (TIA integrated) → Knowledge graph + PageRank for documentation
+- **TIA** → Application workspace applying multiple SIL innovations
+
+Some tools are applications (not innovations themselves) that demonstrate SIL principles in production.
+
+**See also:** `../innovations/README.md` for innovation descriptions and the inverse mapping
+
+---
+
 ## reveal - Semantic Code Explorer ⭐
 
 **The simplest way to understand code.** Point it at a directory, file, or function. Get exactly what you need.

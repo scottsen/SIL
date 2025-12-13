@@ -109,7 +109,7 @@ Semantic Memory is the **persistent knowledge substrate**—the "file system" fo
 **2. Storage Engines**
 - Graph databases (Neo4j, TerminusDB, or custom)
 - Triple stores (RDF-based)
-- Content-addressable storage (IPFS-like)
+- Content-addressable storage (IPFS-like) — **See:** [Distributed Storage Architecture](../architecture/DISTRIBUTED_STORAGE_ARCHITECTURE.md) for IPFS integration strategy
 - Hybrid relational + graph models
 
 **3. Query Languages**
