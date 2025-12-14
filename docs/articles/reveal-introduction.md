@@ -566,7 +566,7 @@ Try it. Your token budget will thank you.
 - **Scout (Code Review):** https://github.com/scottsen/scout
 - **Research:** 12 projects documented internally, selective public releases
 
-**Current Version:** Reveal v0.19.0
+**Current Version:** Reveal v0.23.0
 **License:** MIT
 **Maintained by:** Scott (Founder, Semantic Infrastructure Lab)
 
