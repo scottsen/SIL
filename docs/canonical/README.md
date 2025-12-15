@@ -1,246 +1,127 @@
 # Canonical Documents
 
-**The foundational documents of the Semantic Infrastructure Lab**
+Essential reading for understanding the Semantic Infrastructure Lab.
 
-> **Navigation:** This is the index of canonical documents.
-> - [Start Here](START_HERE.md) — New to SIL? Begin there
-
-These are the authoritative, definitive documents that define SIL's mission, principles, technical architecture, and governance.
-
-**Document Count:** 21 canonical documents across 5 categories
+> **Quick Start:** [Start Here](START_HERE.md) — Your first 5 minutes with SIL
 
 ---
 
-## Core Foundation
+## Essential Documents
+
+These 5 documents give you the complete picture of SIL in ~1 hour.
 
 ### [Manifesto](SIL_MANIFESTO.md) ⭐ Start Here
-**15 minutes** | Why semantic infrastructure matters
+**15 min** | Why semantic infrastructure matters
 
 The problem with contemporary AI systems: they lack explicit meaning, stable memory, inspectable reasoning, and provenance. SIL exists to build this missing layer.
 
----
+### [Founder's Letter](FOUNDERS_LETTER.md)
+**10 min** | Personal perspective
+
+Why SIL exists, what gap it fills, and the commitment to explicit meaning and provenance.
 
 ### [Principles](SIL_PRINCIPLES.md)
-**10 minutes** | The 14 principles that guide all SIL work
+**10 min** | The 14 principles that guide all SIL work
 
-- 5 core principles (Clarity, Simplicity, Composability, Correctness, Verifiability)
-- 9 operational principles (Structure before heuristics, Meaning must be explicit, Provenance everywhere, etc.)
-
----
+5 core principles (Clarity, Simplicity, Composability, Correctness, Verifiability) plus 9 operational principles.
 
 ### [Glossary](SIL_GLOSSARY.md)
 **Reference** | Canonical vocabulary (108+ terms)
 
-Precise definitions for all core concepts including trust, governance, and agency primitives. **Keep this open while reading other documents.**
+Precise definitions for all core concepts. **Keep this open while reading other documents.**
 
----
-
-### [Semantic OS Architecture](SIL_SEMANTIC_OS_ARCHITECTURE.md)
-**30 minutes** | Six-layer technical architecture
-
-The 6-layer Semantic Operating System: Semantic Memory → USIR → Domain Modules → Agent Orchestration → Deterministic Engines → Semantic Interfaces
-
----
-
-### [Stewardship Manifesto](SIL_STEWARDSHIP_MANIFESTO.md)
-**20 minutes** | Values and governance
-
-How SIL approaches stewardship, decision-making, and long-term sustainability.
-
----
-
-### [Founder's Letter](FOUNDERS_LETTER.md)
-**10 minutes** | Personal perspective
-
-Why SIL exists, what gap it fills in modern AI infrastructure, and the commitment to explicit meaning and provenance.
-
----
-
-## Trust & Governance
-
-These documents define how trust, authorization, and agency work in semantic systems. This is the "governance kernel" — the primitives that enable legally-defensible, auditable agent behavior.
-
-### [Trust Assertion Protocol (TAP)](TRUST_ASSERTION_PROTOCOL.md)
-**25 minutes** | Trust claims and verification
-
-How agents and humans make verifiable trust claims. Covers 7 claim types, proof mechanisms (signatures, ZK-SNARKs, SD-JWT), and the Semantic Passport.
-
-**Key insight:** TAP proves "X can do Y" (capability). It does NOT prove "X may do Y" (authorization).
-
----
-
-### [Authorization Protocol](AUTHORIZATION_PROTOCOL.md)
-**20 minutes** | Permission and authority
-
-The primitive that grants permission to act. Distinct from TAP — authorization is explicit permission with scope, constraints, and expiration.
-
-**Key insight:** TAP + Authorization = Complete trust model. TAP without Authorization is capability without permission.
-
----
-
-### [Hierarchical Agency Framework](HIERARCHICAL_AGENCY_FRAMEWORK.md)
-**35 minutes** | Agency levels and delegation
-
-How agency is calibrated by level (Strategic → Operational → Tactical → Execution). Covers delegation depth limits, authority validation, and the "why" hierarchy.
-
-**Key insight:** Agency shrinks down the chain. Lower levels get narrower scope and less context.
-
----
-
-### [Safety Thresholds](SIL_SAFETY_THRESHOLDS.md)
-**15 minutes** | Safety boundaries and escalation
-
-When agents must escalate vs act autonomously. Defines blast radius limits, reversibility requirements, and human-in-loop triggers.
-
----
-
-## Research Contributions
-
-Theoretical frameworks and research papers emerging from SIL work.
-
-### [Semantic Feedback Loops](SEMANTIC_FEEDBACK_LOOPS.md)
-**40 minutes** | Closed-loop control for semantic systems
-
-How semantic systems achieve precision through reflection-measurement-correction loops.
-
----
-
-### [Semantic Observability](SEMANTIC_OBSERVABILITY.md)
-**45 minutes** | Intent-execution alignment detection
-
-Framework for measuring semantic system health through vector embeddings and multi-dimensional fitness metrics.
-
----
-
-### [Multi-Agent Protocol Principles](MULTI_AGENT_PROTOCOL_PRINCIPLES.md)
-**30 minutes** | Agent coordination patterns
-
-Principles for designing multi-agent communication protocols that enable composable, transparent collaboration.
-
----
-
-### [Founder's Note: Multi-Shot Agent Learning](FOUNDERS_NOTE_MULTISHOT_AGENT_LEARNING.md)
-**35 minutes** | Learning across interactions
-
-How agents learn and improve through multiple interaction cycles, building institutional memory.
-
----
-
-## Technical Deep Dives
-
-Detailed technical specifications and implementation guidance.
-
-### [Design Principles](SIL_DESIGN_PRINCIPLES.md)
-**20 minutes** | Engineering principles
-
-Detailed engineering principles for building semantic infrastructure.
-
----
-
-### [Technical Charter](SIL_TECHNICAL_CHARTER.md)
-**25 minutes** | Technical governance
-
-Charter defining technical decision-making, standards, and architectural authority.
-
----
-
-### [Progressive Disclosure Guide](PROGRESSIVE_DISCLOSURE_GUIDE.md)
-**20 minutes** | Token-efficient information delivery
-
-How to structure information for progressive disclosure — the pattern that achieves 25x token reduction.
-
----
-
-### [Reveal + Beth Progressive Knowledge](REVEAL_BETH_PROGRESSIVE_KNOWLEDGE_SYSTEM.md)
-**15 minutes** | Discovery tools
-
-How Reveal and Beth work together for progressive codebase exploration.
-
----
-
-### [Tool Quality Monitoring](SIL_TOOL_QUALITY_MONITORING.md)
-**15 minutes** | Tool health metrics
-
-How to monitor and measure tool quality in production semantic systems.
-
----
-
-### [Year 1 Research Agenda](SIL_RESEARCH_AGENDA_YEAR1.md)
-**20 minutes** | Research priorities
+### [Research Agenda](SIL_RESEARCH_AGENDA_YEAR1.md)
+**20 min** | What we're building
 
 Research priorities and deliverables for SIL's first year.
 
 ---
 
+## Reference Archive
+
+Deep technical documents for researchers and contributors. All documents remain accessible—this organization helps you find what you need.
+
+<details>
+<summary><strong>Architecture & Governance (4 docs)</strong></summary>
+
+- [Semantic OS Architecture](SIL_SEMANTIC_OS_ARCHITECTURE.md) — 6-layer technical architecture (30 min)
+- [Stewardship Manifesto](SIL_STEWARDSHIP_MANIFESTO.md) — Values and governance (20 min)
+- [Technical Charter](SIL_TECHNICAL_CHARTER.md) — Technical decision-making (25 min)
+- [Design Principles](SIL_DESIGN_PRINCIPLES.md) — Engineering principles (20 min)
+
+</details>
+
+<details>
+<summary><strong>Trust & Agency (4 docs)</strong></summary>
+
+The "governance kernel" — primitives for legally-defensible, auditable agent behavior.
+
+- [Trust Assertion Protocol](TRUST_ASSERTION_PROTOCOL.md) — Trust claims and verification (25 min)
+- [Authorization Protocol](AUTHORIZATION_PROTOCOL.md) — Permission and authority (20 min)
+- [Hierarchical Agency Framework](HIERARCHICAL_AGENCY_FRAMEWORK.md) — Agency levels and delegation (35 min)
+- [Safety Thresholds](SIL_SAFETY_THRESHOLDS.md) — Safety boundaries and escalation (15 min)
+
+</details>
+
+<details>
+<summary><strong>Research Papers (4 docs)</strong></summary>
+
+Theoretical frameworks emerging from SIL work.
+
+- [Semantic Feedback Loops](SEMANTIC_FEEDBACK_LOOPS.md) — Closed-loop control (40 min)
+- [Semantic Observability](SEMANTIC_OBSERVABILITY.md) — Intent-execution alignment (45 min)
+- [Multi-Agent Protocol Principles](MULTI_AGENT_PROTOCOL_PRINCIPLES.md) — Agent coordination (30 min)
+- [Multi-Shot Agent Learning](FOUNDERS_NOTE_MULTISHOT_AGENT_LEARNING.md) — Learning across interactions (35 min)
+
+</details>
+
+<details>
+<summary><strong>Implementation Guides (3 docs)</strong></summary>
+
+- [Progressive Disclosure Guide](PROGRESSIVE_DISCLOSURE_GUIDE.md) — Token-efficient delivery (20 min)
+- [Reveal + Beth System](REVEAL_BETH_PROGRESSIVE_KNOWLEDGE_SYSTEM.md) — Discovery tools (15 min)
+- [Tool Quality Monitoring](SIL_TOOL_QUALITY_MONITORING.md) — Tool health metrics (15 min)
+
+</details>
+
+---
+
 ## Reading Paths
 
-### Path 1: Quick Start (30 minutes)
-**Perfect for:** First-time visitors, curious developers
+<details>
+<summary><strong>Quick Start (30 min)</strong> — First-time visitors</summary>
 
-1. Manifesto (15 min) ← Why SIL exists
-2. Glossary (quick reference) ← Key terms
-3. Founder's Letter (10 min) ← Personal context
+1. Manifesto (15 min) — Why SIL exists
+2. Glossary (quick reference) — Key terms
+3. Founder's Letter (10 min) — Personal context
 
-**Output:** You understand what SIL is and why it matters.
+**Result:** You understand what SIL is and why it matters.
 
----
+</details>
 
-### Path 2: Technical Understanding (1.5 hours)
-**Perfect for:** Engineers, architects who want depth
+<details>
+<summary><strong>Technical Deep Dive (2+ hours)</strong> — Engineers and architects</summary>
 
-1. Manifesto (15 min)
-2. Principles (10 min)
-3. Semantic OS Architecture (30 min)
-4. Stewardship Manifesto (20 min)
-5. Glossary (ongoing reference)
+1. All Essential Documents (1 hr)
+2. Semantic OS Architecture (30 min)
+3. Design Principles (20 min)
+4. Technical Charter (25 min)
 
-**Output:** You understand SIL's technical architecture and governance model.
+**Result:** You understand SIL's technical architecture and governance model.
 
----
+</details>
 
-### Path 3: Trust & Governance Deep Dive (1.5 hours)
-**Perfect for:** Those building agent systems, legal/compliance folks
+<details>
+<summary><strong>Trust & Governance (1.5 hours)</strong> — Agent builders, compliance</summary>
 
-1. Trust Assertion Protocol (25 min) ← How trust claims work
-2. Authorization Protocol (20 min) ← How permission works
-3. Hierarchical Agency Framework (35 min) ← How agency is structured
-4. Safety Thresholds (15 min) ← When to escalate
+1. Trust Assertion Protocol (25 min) — How trust claims work
+2. Authorization Protocol (20 min) — How permission works
+3. Hierarchical Agency Framework (35 min) — How agency is structured
+4. Safety Thresholds (15 min) — When to escalate
 
-**Output:** You understand how SIL enables legally-defensible, auditable agent behavior.
+**Result:** You understand legally-defensible, auditable agent behavior.
 
----
-
-### Path 4: Complete Mastery (4+ hours)
-**Perfect for:** Core contributors, stewards
-
-Read all documents in order by section, then explore:
-- [Tools](../tools/) - See SIL principles in production code
-- [Research](../research/) - Formal research papers
-- [Architecture](../architecture/) - The universal pattern
-
-**Output:** Complete understanding of SIL's foundation.
-
----
-
-## Document Organization
-
-| Category | Count | Reading Time |
-|----------|-------|--------------|
-| Core Foundation | 6 | ~1.5 hours |
-| Trust & Governance | 4 | ~1.5 hours |
-| Research Contributions | 4 | ~2.5 hours |
-| Technical Deep Dives | 6 | ~2 hours |
-| **Total** | **21** | **~7.5 hours** |
-
----
-
-## Quick Reference by Topic
-
-**Trust:** TAP → Authorization → Safety Thresholds
-**Agency:** Hierarchical Agency → Multi-Agent Protocols → Safety Thresholds
-**Architecture:** Semantic OS → Design Principles → Technical Charter
-**Learning:** Multi-Shot Learning → Semantic Feedback Loops → Semantic Observability
-**Tools:** Progressive Disclosure → Reveal+Beth → Tool Quality Monitoring
+</details>
 
 ---
 
@@ -249,10 +130,10 @@ Read all documents in order by section, then explore:
 - **New here?** [Start Here](START_HERE.md)
 - **Production tools:** [Tools](../tools/)
 - **Research papers:** [Research](../research/)
-- **Architecture patterns:** [Architecture](../architecture/)
+- **Essays:** [Essays](../essays/)
 
 ---
 
-**Last Updated:** 2025-12-14
-**Total Documents:** 21 canonical docs across 5 categories
-**Estimated Total Reading Time:** ~7.5 hours
+**Last Updated:** 2025-12-15
+**Essential Documents:** 5 (1 hour total)
+**Reference Archive:** 15 additional docs for deep exploration
