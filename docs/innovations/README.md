@@ -107,7 +107,7 @@ Some innovations span multiple categories. For example:
 
 **The Innovation:** Structure before content—three levels (Orient → Navigate → Focus). Tree view → Outline → Extract. 10x token reduction measured in practice.
 
-**Status:** v0.18.0 (production, PyPI published), ~2,000 downloads/month
+**Status:** v0.23.1 (production, PyPI published), ~2,000 downloads/month
 
 **Key Metric:** 10x token reduction (50 tokens structure vs 500 tokens full file)
 
@@ -150,7 +150,7 @@ Some innovations span multiple categories. For example:
 ## By Maturity
 
 ### Production (4 projects) 🟢
-- **[Reveal](./PROGRESSIVE_DISCLOSURE.md)** - v0.18.0, PyPI published, ~2,000 downloads/month
+- **[Reveal](./PROGRESSIVE_DISCLOSURE.md)** - v0.23.1, PyPI published, ~2,000 downloads/month
 - **TiaCAD** - v3.1.2, 1,025 tests, 92% coverage
 - **[GenesisGraph](./GENESISGRAPH.md)** - v0.3.0, 320 tests, production cryptography
 - **[Morphogen](./MORPHOGEN.md)** - v0.11.0, 1,600+ tests, zero technical debt

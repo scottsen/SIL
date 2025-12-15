@@ -157,7 +157,7 @@ $ reveal middleware.py validate_token
 
 ## Status & Adoption
 
-**Current Version:** v0.18.0 (Production, PyPI Published)
+**Current Version:** v0.23.1 (Production, PyPI Published)
 
 **Production Metrics:**
 - ✅ **100+ daily downloads** on PyPI
