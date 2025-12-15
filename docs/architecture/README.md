@@ -28,6 +28,17 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ---
 
+### [Layer Models Comparison](models/) ⭐⭐ Architecture Decision
+**15-30 minutes** | Comparing competing layer models for the Semantic OS
+
+**Active evaluation** - Multiple layer models have evolved across documentation. This directory tracks and compares them:
+- 5 documented models (Canonical, Original, Feedback, Observability, Provenance-First)
+- Side-by-side comparison tables
+- Evaluation framework for selecting canonical model
+- Key question: Is Provenance the true L0?
+
+---
+
 ### [Distributed Storage Architecture](DISTRIBUTED_STORAGE_ARCHITECTURE.md) ⭐⭐ Infrastructure Design
 **20-30 minutes** | IPFS integration strategy for semantic memory, identity, and provenance
 
@@ -153,7 +164,7 @@ After reading this guide:
 
 ---
 
-**Last Updated:** 2025-12-10
-**Documents:** 2 (Unified Architecture Guide, Distributed Storage Architecture)
-**Reading Time:** ~60-75 minutes
-**Status:** Complete and stable
+**Last Updated:** 2025-12-15
+**Documents:** 3 directories (Unified Architecture Guide, Distributed Storage Architecture, Layer Models)
+**Reading Time:** ~75-105 minutes
+**Status:** Active - Layer model evaluation in progress
