@@ -114,7 +114,7 @@ Following these 14 principles means SIL infrastructure will still be coherent, i
 
 SIL principles are not aspirational—they're operational in production tools today.
 
-**reveal** (v0.18.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
+**reveal** (v0.23.0 on PyPI, 100+ downloads/day as of Dec 2025) demonstrates how these principles manifest in working software. It's proof that semantic infrastructure isn't hypothetical—it's solving real problems for developers and AI agents.
 
 ### **Principle #1: Structure Before Heuristics**
 
