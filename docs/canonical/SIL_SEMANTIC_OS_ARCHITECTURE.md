@@ -1,27 +1,32 @@
 # SIL Semantic OS Architecture
 
-> **Note:** This document uses an earlier 6-layer model. The current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) (Cognitive OSI Stack, L0-L6). The core concepts remain valid; layer numbering is being consolidated.
+**Version:** 2.0 (December 2025)
+**Canonical Reference:** [SIL_GLOSSARY.md](./SIL_GLOSSARY.md)
 
 ## TL;DR (2-minute overview)
 
-**What is the Semantic OS?** A 6-layer architecture for knowledge work—like Linux for computation, but for meaning.
+**What is the Semantic OS?** A 7-layer architecture for knowledge work—like Linux for computation, but for meaning.
 
 **The core insight:** Just as an OS manages processes, memory, and devices, the Semantic OS manages **knowledge, agents, and deterministic computation**.
 
 ```
-Layer 5: Human Interfaces     ← CLIs, GUIs, conversational agents
-Layer 4: Deterministic Engines ← Morphogen, hermetic builds, verification
-Layer 3: Agent Ether          ← Multi-agent coordination & protocols
-Layer 2: Domain Modules       ← Water, Healthcare, Education, etc.
-Layer 1: Pantheon IR          ← Universal semantic types (the "assembly language")
-Layer 0: Semantic Memory      ← Knowledge graphs, provenance, persistence
+Layer 6: Intelligence    (Agent Ether, BrowserBridge)     ← Multi-agent coordination
+Layer 5: Intent          (Pantheon validation)            ← Constraints & feedback loops
+Layer 4: Dynamics        (Morphogen scheduler)            ← Temporal execution
+Layer 3: Composition     (Pantheon IR, SUP)               ← Cross-domain integration
+Layer 2: Structures      (TiaCAD, GenesisGraph)           ← Data structures & provenance
+Layer 1: Primitives      (Morphogen domains)              ← 40+ computational domains
+Layer 0: Substrate       (Philbrick hardware)             ← Hardware foundation
+─────────────────────────────────────────────────────────────────────────────────
+Cross-cutting: Observability (Reveal), Provenance (GenesisGraph), Trust (TAP)
 ```
 
 **Key innovations:**
-- **Persistent semantic memory** that survives beyond single prompts
-- **Universal IR** enabling cross-domain interoperability
-- **Deterministic execution** for reproducible workflows
-- **Multi-agent protocols** for inspectable collaboration
+- **Hardware-software co-design** from Philbrick substrate to agent intelligence
+- **Universal IR** enabling cross-domain interoperability (Pantheon)
+- **Deterministic execution** for reproducible workflows (Morphogen)
+- **Multi-agent protocols** for inspectable collaboration (Agent Ether)
+- **Verifiable provenance** at every layer (GenesisGraph)
 
 **Want the full architecture?** Read the detailed layer descriptions below ↓
 
@@ -29,54 +34,71 @@ Layer 0: Semantic Memory      ← Knowledge graphs, provenance, persistence
 
 ```mermaid
 graph TB
-    subgraph L5["Layer 5: Human Interfaces"]
-        H1[CLIs]
-        H2[GUIs]
-        H3[Chat Agents]
+    subgraph L6["Layer 6: Intelligence"]
+        I1[Agent Ether]
+        I2[BrowserBridge]
     end
 
-    subgraph L4["Layer 4: Deterministic Engines"]
-        D1[Morphogen]
-        D2[Hermetic Builds]
-        D3[Verification]
+    subgraph L5["Layer 5: Intent"]
+        IN1[Validation]
+        IN2[Feedback Loops]
     end
 
-    subgraph L3["Layer 3: Agent Ether"]
-        A1[Coordination]
-        A2[Discovery]
-        A3[Composition]
+    subgraph L4["Layer 4: Dynamics"]
+        D1[Morphogen Scheduler]
+        D2[Multirate Coordination]
     end
 
-    subgraph L2["Layer 2: Domain Modules"]
-        M1[Water]
-        M2[Healthcare]
-        M3[Education]
+    subgraph L3["Layer 3: Composition"]
+        C1[Pantheon IR]
+        C2[SUP]
+        C3[GenesisGraph]
     end
 
-    subgraph L1["Layer 1: Pantheon IR"]
-        P1[Universal Types]
-        P2[Semantic Operators]
+    subgraph L2["Layer 2: Structures"]
+        S1[TiaCAD]
+        S2[GenesisGraph]
     end
 
-    subgraph L0["Layer 0: Semantic Memory"]
-        S1[Knowledge Graphs]
-        S2[Provenance]
-        S3[Persistence]
+    subgraph L1["Layer 1: Primitives"]
+        P1[Morphogen Domains]
+        P2[RiffStack]
     end
 
+    subgraph L0["Layer 0: Substrate"]
+        H1[Philbrick]
+    end
+
+    L6 <--> L5
     L5 <--> L4
     L4 <--> L3
     L3 <--> L2
     L2 <--> L1
     L1 <--> L0
 
-    style L5 fill:#e1f5fe,stroke:#01579b
-    style L4 fill:#e8f5e9,stroke:#2e7d32
-    style L3 fill:#fff3e0,stroke:#e65100
-    style L2 fill:#f3e5f5,stroke:#6a1b9a
-    style L1 fill:#e3f2fd,stroke:#1565c0
-    style L0 fill:#fce4ec,stroke:#880e4f
+    style L6 fill:#e1f5fe,stroke:#01579b
+    style L5 fill:#e8f5e9,stroke:#2e7d32
+    style L4 fill:#fff3e0,stroke:#e65100
+    style L3 fill:#f3e5f5,stroke:#6a1b9a
+    style L2 fill:#e3f2fd,stroke:#1565c0
+    style L1 fill:#fce4ec,stroke:#880e4f
+    style L0 fill:#f5f5f5,stroke:#424242
 ```
+
+### Layer Model Evolution
+
+This document was originally written with a 6-layer conceptual model. The current canonical 7-layer model (above) reflects implementation learnings. The detailed layer descriptions below use the original naming but map to the current model as follows:
+
+| Original (This Doc) | Current Canonical | Key Products |
+|---------------------|-------------------|--------------|
+| L0: Semantic Memory | L2-L3: Structures/Composition | GenesisGraph, Beth |
+| L1: Pantheon IR | L3: Composition | Pantheon IR |
+| L2: Domain Modules | L1: Primitives | Morphogen domains |
+| L3: Agent Ether | L6: Intelligence | Agent Ether, BrowserBridge |
+| L4: Deterministic Engines | L1+L4: Primitives+Dynamics | Morphogen |
+| L5: Human Interfaces | (Cross-cutting) | Reveal, TIA, SUP |
+| (Not in original) | L0: Substrate | Philbrick |
+| (Not in original) | L5: Intent | Pantheon validation |
 
 ---
 
@@ -88,9 +110,11 @@ Just as an operating system manages processes, memory, files, and devices, the S
 
 ---
 
-## The Six-Layer Architecture
+## Detailed Layer Descriptions
 
-Each layer below is described in detail with its purpose, core capabilities, and relationships to other layers.
+> **Note:** The sections below use the original 6-layer naming from the initial architecture design. See the [Layer Model Evolution](#layer-model-evolution) table above for mapping to the current 7-layer canonical model.
+
+Each layer is described in detail with its purpose, core capabilities, and relationships to other layers.
 
 ---
 
@@ -673,23 +697,27 @@ Just as Linux abstracts hardware and provides common services for applications, 
 
 ## Conclusion
 
-The Semantic OS is **infrastructure for the age of AI and civilizational-scale challenges**. It provides:
+The Semantic OS is **infrastructure for the age of AI and civilizational-scale challenges**. The 7-layer architecture provides:
 
-- **Semantic Memory** - Persistent, queryable, provenance-tracked knowledge
-- **Pantheon IR** - Universal interoperability across domains
-- **Domain Modules** - Specialized systems for real-world problems
-- **Agent Ether** - Coordination for human-AI collaboration
-- **Morphogen** - Reproducible, verifiable computation
-- **Human Interfaces** - Accessible, explainable interaction
+- **L0 Substrate** — Hardware foundation (Philbrick) enabling software/hardware co-design
+- **L1 Primitives** — 40+ unified computational domains (Morphogen)
+- **L2 Structures** — Data structures with spatial reasoning (TiaCAD) and provenance (GenesisGraph)
+- **L3 Composition** — Cross-domain semantic integration (Pantheon IR, SUP)
+- **L4 Dynamics** — Deterministic temporal execution (Morphogen scheduler)
+- **L5 Intent** — Validation, constraints, and feedback loops
+- **L6 Intelligence** — Multi-agent coordination (Agent Ether, BrowserBridge)
 
-Together, these six layers form a **unified platform for building civilizational infrastructure**.
+Plus cross-cutting concerns: **Observability** (Reveal), **Provenance** (GenesisGraph), **Trust** (TAP).
+
+Together, these seven layers form a **unified platform for building civilizational infrastructure**.
 
 This is the technical core of SIL's mission.
 
 ---
 
 **Related Documents:**
-- SIL_GLOSSARY.md - Definitions of key terms
-- SIL_PRINCIPLES.md - The 14 guiding principles
-- ../architecture/UNIFIED_ARCHITECTURE_GUIDE.md - The universal pattern
-- ../../projects/PROJECT_INDEX.md - See how projects map to these layers
+- [SIL Glossary](./SIL_GLOSSARY.md) — Canonical layer definitions (L0-L6)
+- [SIL Principles](./SIL_PRINCIPLES.md) — The 14 guiding principles
+- [Semantic Feedback Loops](./SEMANTIC_FEEDBACK_LOOPS.md) — Closed-loop control theory
+- [Semantic Observability](./SEMANTIC_OBSERVABILITY.md) — Intent-execution alignment
+- [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) — The universal pattern

@@ -1,10 +1,8 @@
 # Semantic Observability: Automated Detection of Intent-Execution Alignment
 
-> **Note:** Layer references in this document (including "L4.5") use an earlier model. Current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md). Observability is now considered a cross-cutting concern rather than a layer.
-
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)
-**Date:** 2025-12-04
-**Status:** Canonical Document v1
+**Date:** 2025-12-04 (updated 2025-12-14)
+**Status:** Canonical Document v1.1
 
 ---
 
@@ -1031,35 +1029,29 @@ class AdaptiveFitnessLearner:
 
 ## Integration with Semantic OS Architecture
 
-**Observability as Layer 4.5 (between TIA and Pantheon):**
+**Observability as a cross-cutting concern** (see [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) for canonical definitions):
 
 ```
-Layer 7: Applications (Scout, Reveal, Agent-Ether)
-         ↓
-Layer 6: Agent Orchestration (Multi-agent coordination)
-         ↓
-Layer 5: Pantheon (Universal Semantic IR)
-         ↓
-Layer 4.5: SEMANTIC OBSERVABILITY ← This document
-         │   - Intent-execution alignment measurement
-         │   - Multi-dimensional fitness scoring
-         │   - Anti-pattern detection
-         │   - Health monitoring
-         ↓
-Layer 4: TIA (Semantic search, task management, session tracking)
-         ↓
-Layer 3: Beth (Knowledge graph, embeddings)
-         ↓
-Layer 2: Domain modules (git, session, project, etc.)
-         ↓
-Layer 1: Semantic primitives (reveal, grep, jq, etc.)
+Layer 6: Intelligence    (Agent Ether, BrowserBridge)
+Layer 5: Intent          (Pantheon validation, feedback loops)
+Layer 4: Dynamics        (Morphogen scheduler, temporal execution)
+Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph)
+Layer 2: Structures      (TiaCAD, GenesisGraph)
+Layer 1: Primitives      (Morphogen domains, RiffStack)
+Layer 0: Substrate       (Philbrick hardware)
+─────────────────────────────────────────────────────
+Cross-cutting concerns (not layers):
+  • OBSERVABILITY (Reveal) ← This document
+  • Provenance (GenesisGraph)
+  • Trust (TAP + Authorization)
 ```
 
-**Why Layer 4.5?**
+**Why observability is cross-cutting, not a layer:**
 
-- **Below orchestration (Layer 6):** Measures execution, doesn't control it
-- **Above TIA (Layer 4):** Uses TIA's session data as input, but adds intelligence
-- **Feeds back to all layers:** Health metrics inform CLAUDE.md (L7), agent behavior (L6), search patterns (L4)
+- **Applies to all layers:** You can inspect L0 hardware, L3 composition, or L6 agents
+- **Implemented by Reveal:** Universal inspection via progressive disclosure
+- **Feeds into Layer 5:** Observability data drives intent-execution alignment (see [SEMANTIC_FEEDBACK_LOOPS.md](./SEMANTIC_FEEDBACK_LOOPS.md))
+- **No "Layer 4.5" needed:** Cross-cutting concerns span the stack, they don't sit between layers
 
 ---
 
@@ -1099,9 +1091,10 @@ Layer 1: Semantic primitives (reveal, grep, jq, etc.)
 ## References & Further Reading
 
 **Related SIL Documents:**
-- [SEMANTIC_FEEDBACK_LOOPS.md](./SEMANTIC_FEEDBACK_LOOPS.md) - Theoretical foundation for closed-loop control
-- [SIL_SEMANTIC_OS_ARCHITECTURE.md](./SIL_SEMANTIC_OS_ARCHITECTURE.md) - Layer structure and system design
-- [MULTI_AGENT_PROTOCOL_PRINCIPLES.md](./MULTI_AGENT_PROTOCOL_PRINCIPLES.md) - Agent coordination patterns
+- [SIL Glossary](./SIL_GLOSSARY.md) — Canonical layer definitions (L0-L6), Meta-Layer: Observability
+- [Semantic Feedback Loops](./SEMANTIC_FEEDBACK_LOOPS.md) — Theoretical foundation for closed-loop control
+- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) — Layer structure and system design
+- [Multi-Agent Protocol Principles](./MULTI_AGENT_PROTOCOL_PRINCIPLES.md) — Agent coordination patterns
 
 **Case Studies:**
 - Session badero-1204 - Meta-feedback loop demonstrating observability principles
@@ -1114,10 +1107,14 @@ Layer 1: Semantic primitives (reveal, grep, jq, etc.)
 
 ---
 
-**Document Status:** Canonical v1
-**Last Updated:** 2025-12-04
+**Document Status:** Canonical v1.1
+**Last Updated:** 2025-12-14
 **Maintainers:** Scott Senkeresty, Tia
-**License:** [To be determined - SIL license policy]
+**License:** CC BY 4.0
+
+**Changelog:**
+- 2025-12-14: Reframed observability as cross-cutting concern, aligned layer model
+- 2025-12-04: Initial version based on badero-1204 session insight
 
 ---
 

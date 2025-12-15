@@ -1,8 +1,6 @@
 # Semantic Feedback Loops: Closed-Loop Control for Semantic Systems
 
-> **Note:** Layer references in this document use an earlier model. Current canonical layer definitions are in [SIL_GLOSSARY.md](./SIL_GLOSSARY.md).
-
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2025-12-04
 **Status:** Canonical - Foundational Theory
 **Related:** Multi-Agent Protocol Principles, Semantic OS Architecture
@@ -636,26 +634,34 @@ Best sessions:
 
 ### 4. Feedback as First-Class Infrastructure
 
-**Semantic OS layer architecture:**
+**Semantic OS layer architecture** (see [SIL_GLOSSARY.md](./SIL_GLOSSARY.md) for canonical definitions):
 ```
-Layer 6: Applications (Scout, Morphogen, etc.)
-Layer 5: Agent Orchestration (agent-ether)
-Layer 4: Semantic Primitives (USIR, knowledge graphs)
-Layer 3: Feedback & Reflection (THIS LAYER!)
-Layer 2: Tool Infrastructure (reveal, tia commands)
-Layer 1: Storage & Indexing (Beth, Gemma)
+Layer 6: Intelligence    (Agent Ether, BrowserBridge)
+Layer 5: Intent          (Pantheon validation, FEEDBACK LOOPS)  ← This document
+Layer 4: Dynamics        (Morphogen scheduler, temporal execution)
+Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph)
+Layer 2: Structures      (TiaCAD, GenesisGraph)
+Layer 1: Primitives      (Morphogen domains, RiffStack)
+Layer 0: Substrate       (Philbrick hardware)
+─────────────────────────────────────────────────────
+Cross-cutting: Observability (Reveal), Provenance (GenesisGraph), Trust (TAP)
 ```
 
-**Layer 3 responsibilities:**
+**Feedback loops live at Layer 5 (Intent)** because they:
+- Measure intent-execution alignment
+- Drive validation and constraint satisfaction
+- Enable precision through reflection-measurement-correction cycles
+
+**Feedback primitives:**
 - Execution tracing (capture what happened)
 - Fitness measurement (evaluate performance)
 - Gap analysis (identify problems)
 - Correction generation (propose fixes)
 - Iteration orchestration (apply and validate)
 
-**Why it's a layer:** Every system above it needs feedback. Making it infrastructure (not application logic) means:
-- Reusable feedback primitives
-- Consistent fitness functions across projects
+**Why feedback is infrastructure:** Every layer benefits from feedback. Making it a first-class primitive means:
+- Reusable feedback patterns across all SIL projects
+- Consistent fitness functions (see [SEMANTIC_OBSERVABILITY.md](./SEMANTIC_OBSERVABILITY.md))
 - Shared reflection tooling (tia session read, beth explore)
 - Systematic improvement methodology
 
@@ -842,9 +848,10 @@ Semantic infrastructure where feedback loops are first-class primitives, fitness
 ## References & Further Reading
 
 **Within SIL:**
-- Multi-Agent Protocol Principles (`MULTI_AGENT_PROTOCOL_PRINCIPLES.md`)
-- Semantic OS Architecture (`SIL_SEMANTIC_OS_ARCHITECTURE.md`)
-- SIL Technical Charter (`SIL_TECHNICAL_CHARTER.md`)
+- [SIL Glossary](./SIL_GLOSSARY.md) — Canonical layer definitions (L0-L6)
+- [Semantic Observability](./SEMANTIC_OBSERVABILITY.md) — Fitness functions and intent-execution alignment
+- [Semantic OS Architecture](./SIL_SEMANTIC_OS_ARCHITECTURE.md) — Full architecture with layer details
+- [Multi-Agent Protocol Principles](./MULTI_AGENT_PROTOCOL_PRINCIPLES.md) — Agent coordination patterns
 
 **Case Studies:**
 - Session mighty-shaman-1204: CLAUDE.md reflection loop (this document's genesis)
@@ -860,10 +867,11 @@ Semantic infrastructure where feedback loops are first-class primitives, fitness
 ---
 
 **Document Status:** Canonical
-**Version:** 1.0
+**Version:** 1.1
 **Author:** Semantic Infrastructure Lab
-**Date:** 2025-12-04
+**Date:** 2025-12-04 (updated 2025-12-14)
 **License:** CC BY 4.0
 
 **Changelog:**
+- 2025-12-14: Aligned layer model with canonical 7-layer Cognitive OSI Stack
 - 2025-12-04: Initial version based on mighty-shaman-1204 session insight
