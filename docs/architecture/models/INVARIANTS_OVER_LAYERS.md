@@ -15,12 +15,14 @@ beth_topics:
   - chief-scientist-stewardship
 summary: Proposes reframing SIL architecture from layer organization to invariant enforcement, better serving the mission of preventing epistemic collapse and enabling human-AI coexistence
 related:
+  # Same directory
   - LAYER_MODELS_COMPARISON.md
   - MODEL_EVALUATION.md
   - PROVENANCE_FIRST.md
-  - ../../../foundation/pitch/THE_FORK.md
-  - ../../../foundation/pitch/VISION_HOPE.md
-  - ../../../foundation/SCOPE_OF_HOPE.md
+  # Foundation docs (in tia/projects/SIL/foundation/)
+  - THE_FORK.md           # tia/projects/SIL/foundation/pitch/
+  - VISION_HOPE.md        # tia/projects/SIL/foundation/pitch/
+  - SCOPE_OF_HOPE.md      # tia/projects/SIL/foundation/
 synthesis_sources:
   - SIL_VISION_COMPLETE.md
   - SIL_CIVILIZATIONAL_SYSTEMS_ENGINEERING.md
