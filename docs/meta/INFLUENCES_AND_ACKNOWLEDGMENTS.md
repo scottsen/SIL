@@ -82,9 +82,9 @@ But remember: **All of them are part of the same tradition—the tradition of wr
 
 ### Alan Turing (1912-1954) — Morphogenesis & Emergence
 
-**Dedication**: [Read Full Dedication →](./DEDICATION.md)
+**Dedication**: [Read Full Acknowledgments →](./ACKNOWLEDGMENTS.md)
 
-**Relationship**: SIL **continues Turing's unfinished morphogenesis research**
+**Relationship**: SIL **builds on Turing's morphogenesis research**
 
 **His Work**:
 - "The Chemical Basis of Morphogenesis" (1952)
@@ -429,7 +429,7 @@ This is a living acknowledgment. As we discover new influences or better articul
 
 ## 🔗 Related Documents
 
-- [Turing Dedication](./DEDICATION.md) - Morphogenesis lineage
+- [Acknowledgments](./ACKNOWLEDGMENTS.md) - Intellectual foundations and lineage
 - [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Values and principles
 - [Project Index](../../projects/PROJECT_INDEX.md) - All SIL projects including Pantheon
 

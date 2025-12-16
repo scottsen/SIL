@@ -547,7 +547,7 @@ The potential impact:
 - **AI reasoning:** Enable multi-agent systems to transfer knowledge across domains
 - **Creativity:** Computational support for analogical thinking
 
-**This is rigorous, implementable, and revolutionary.**
+**This is rigorous, implementable, and represents a significant advance in how semantic systems can reason.**
 
 The work ahead is methodical, long-term, and necessary. As semantic systems become central to knowledge work, they must move beyond retrieval and similarity. They must reason by **analogy**—the hallmark of human insight.
 
