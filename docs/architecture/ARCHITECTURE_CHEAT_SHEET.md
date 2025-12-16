@@ -3,7 +3,6 @@ title: SIL Architecture Cheat Sheet
 type: reference
 status: current
 created: 2025-12-15
-session_id: turbulent-current-1215
 beth_topics:
   - sil-architecture
   - invariants

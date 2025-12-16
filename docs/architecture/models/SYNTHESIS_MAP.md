@@ -3,7 +3,6 @@ title: "Architecture Synthesis Map"
 type: meta-documentation
 status: current
 created: 2025-12-15
-session_id: pulsing-horizon-1215
 beth_topics:
   - sil-architecture
   - documentation-map

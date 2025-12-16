@@ -3,8 +3,6 @@ title: "Invariants Over Layers: A Mission-Centric Architecture Frame"
 type: architectural-proposal
 status: draft
 created: 2025-12-15
-session_id: pulsing-horizon-1215
-continues: oracular-throne-1215
 beth_topics:
   - sil-architecture
   - invariants

@@ -2,8 +2,7 @@
 
 **Author:** Scott Senkeresty, Semantic Infrastructure Lab
 **Date:** 2025-12-04
-**Type:** Founder's Note / Blog Post
-**Status:** Draft
+**Type:** Founder's Note
 
 ---
 
