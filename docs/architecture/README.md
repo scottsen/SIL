@@ -64,7 +64,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 ```
 UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
     ↓ Applies
-/foundations/SIL_PRINCIPLES.md (The Principles)
+/foundations/design-principles.md (The Principles)
     ↓ Implements
 /foundations/SIL_SEMANTIC_OS_ARCHITECTURE.md (The 6-Layer Stack)
     ↓ Realized in
@@ -140,7 +140,7 @@ UNIFIED_ARCHITECTURE_GUIDE.md (The Pattern)
 After reading this guide:
 
 **To understand the principles:**
-→ Read [SIL Principles](/foundations/SIL_PRINCIPLES)
+→ Read [SIL Principles](/foundations/design-principles)
 
 **To understand the 6-layer stack:**
 → Read [Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE)

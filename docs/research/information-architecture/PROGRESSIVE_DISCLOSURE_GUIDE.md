@@ -449,7 +449,7 @@ def run_research(topic: str, config_path: str = "scout_config.yaml") -> Research
 2. **Workflow example** - Multi-step showing typical patterns
 3. **Complete example** - Full context with edge cases
 
-See: [SIL Principles](./SIL_PRINCIPLES) - Examples as Multi-Shot Reasoning Anchors
+See: [SIL Principles](/foundations/design-principles) - Examples as Multi-Shot Reasoning Anchors
 
 ---
 
@@ -887,7 +887,7 @@ If yes, add Progressive Disclosure.
 
 ## Related Documentation
 
-- [SIL Principles](./SIL_PRINCIPLES) - Full principle hierarchy
+- [SIL Principles](/foundations/design-principles) - Full principle hierarchy
 - [SIL Design Principles](./SIL_DESIGN_PRINCIPLES) - Detailed design guidance
 - reveal: `reveal --agent-help-full` - See Progressive Disclosure in action
 

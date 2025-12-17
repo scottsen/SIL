@@ -385,7 +385,7 @@ Layer 3 (Orchestration) requires these protocol primitives as first-class citize
 ### SIL Canonical Docs
 
 - `SIL_MANIFESTO.md` - The why (systems should be semantic)
-- `SIL_PRINCIPLES.md` - The how (progressive disclosure, verification)
+- `design-principles` - The how (progressive disclosure, verification)
 - `SIL_SEMANTIC_OS_ARCHITECTURE.md` - The what (Layer 3 orchestration)
 - **This document** - The protocol (how agents coordinate safely — horizontal axis)
 - **`HIERARCHICAL_AGENCY_FRAMEWORK.md`** - The structure (how agents are organized — vertical axis)

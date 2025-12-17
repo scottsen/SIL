@@ -701,7 +701,7 @@ Proceed with campaign? [y/N]
 
 ## Related Documentation
 
-- [SIL Principles](/meta/SIL_PRINCIPLES) - HITL as a core principle
+- [SIL Principles](/foundations/design-principles) - HITL as a core principle
 - [Technical Charter](/meta/SIL_TECHNICAL_CHARTER) - Formal invariants and guarantees
 - [Stewardship Manifesto](/meta/SIL_STEWARDSHIP_MANIFESTO) - Values and governance
 
