@@ -8,7 +8,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ## Essential Reading
 
-### [Unified Architecture Guide](UNIFIED_ARCHITECTURE_GUIDE) ⭐⭐⭐ The Rosetta Stone
+### [Unified Architecture Guide](/architecture/UNIFIED_ARCHITECTURE_GUIDE) ⭐⭐⭐ The Rosetta Stone
 **30-45 minutes** | The canonical framework for understanding all SIL projects
 
 **This is THE most important document.** It:
@@ -28,7 +28,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ---
 
-### [Layer Models Comparison](models/) ⭐⭐ Architecture Decision
+### [Layer Models Comparison](/architecture/models/) ⭐⭐ Architecture Decision
 **15-30 minutes** | Comparing competing layer models for the Semantic OS
 
 **Active evaluation** - Multiple layer models have evolved across documentation. This directory tracks and compares them:
@@ -39,7 +39,7 @@ This guide explains **how to think architecturally** about semantic systems. It 
 
 ---
 
-### [Distributed Storage Architecture](DISTRIBUTED_STORAGE_ARCHITECTURE) ⭐⭐ Infrastructure Design
+### [Distributed Storage Architecture](/architecture/DISTRIBUTED_STORAGE_ARCHITECTURE) ⭐⭐ Infrastructure Design
 **20-30 minutes** | IPFS integration strategy for semantic memory, identity, and provenance
 
 **Research & Planning** - Explores content-addressed distributed storage for SIL infrastructure.
