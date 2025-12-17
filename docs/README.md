@@ -3,7 +3,7 @@
 **Making AI systems transparent and reliable through open infrastructure**
 
 > **Navigation:** This is the repository overview.
-> - [Start Here](canonical/START_HERE.md) — The single front door to SIL
+> - [Start Here](START_HERE.md) — The single front door to SIL
 
 [![Projects](https://img.shields.io/badge/Projects-12-blue)]()
 [![Production Ready](https://img.shields.io/badge/Production-4-green)]()
@@ -23,7 +23,7 @@ reveal your_code.py
 
 See structure first (50 tokens) instead of reading entire files (500+ tokens). Progressive disclosure applied to code.
 
-**[More production tools →](innovations/)** - morphogen, tiacad, genesisgraph
+**[More production tools →](systems/)** - morphogen, tiacad, genesisgraph, beth, tia
 
 ---
 
@@ -50,13 +50,13 @@ Contemporary AI systems are powerful but lack:
 **[→ Complete Documentation](.)** - Philosophy, architecture, research, and guides
 
 **Quick links:**
-- [Founder's Letter](canonical/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
-- [Manifesto](canonical/SIL_MANIFESTO.md) (15 min) - What we're building
+- [Founder's Letter](foundations/FOUNDERS_LETTER.md) (5 min) - Why SIL exists
+- [Manifesto](manifesto/YOLO.md) (10 min) - You Only Live Once - Why we build
 - [FAQ](meta/FAQ.md) - Common questions answered
 - [Unified Architecture Guide](architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (30 min) - How it all fits together
 
-### Projects
-**[→ Project Index](../projects/PROJECT_INDEX.md)** - All 12 projects mapped to the Semantic OS architecture
+### Systems & Tools
+**[→ Production Tools](systems/)** - Working systems you can use today
 
 ### Contributing
 **[→ GitHub](https://github.com/Semantic-Infrastructure-Lab)** - How to get involved
