@@ -429,9 +429,8 @@ This is a living acknowledgment. As we discover new influences or better articul
 
 ## 🔗 Related Documents
 
-- [Founding Values](./DEDICATION.md) - Lab dedication and values
-- [SIL Manifesto](../canonical/SIL_MANIFESTO.md) - Values and principles
-- [Project Index](../../projects/PROJECT_INDEX.md) - All SIL projects including Pantheon
+- [SIL Manifesto](/manifesto/YOLO) - Values and principles
+- [Systems Documentation](/systems/) - All SIL systems
 
 ---
 

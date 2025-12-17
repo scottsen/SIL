@@ -97,11 +97,10 @@ reveal your_code.py
 - **genesisgraph:** Verifiable provenance ([quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md))
 
 **Explore the Ecosystem:**
-- [Project Index](../innovations/INNOVATIONS.md) - All 12 projects
-- [Tools Documentation](../tools/README.md) - Production systems explained
+- [Systems Documentation](/systems/) - Production systems explained
 
 **Learn the Architecture:**
-- [Start Here](../canonical/START_HERE.md) - 30-minute guided tour
+- [Start Here](/START_HERE.md) - 30-minute guided tour
 - [FAQ](./FAQ.md) - Common questions answered
 
 ---
@@ -132,7 +131,7 @@ reveal your_code.py
 - genesisgraph (v0.3.0) - Provenance tracking
 
 **Research/Alpha (Early):**
-- Pantheon IR (Universal Semantic Intermediate Representation) - "Assembly language for meaning" enabling cross-domain transformations ([Glossary](../canonical/SIL_GLOSSARY.md))
+- Pantheon IR (Universal Semantic Intermediate Representation) - "Assembly language for meaning" enabling cross-domain transformations ([Glossary](/foundations/SIL_GLOSSARY))
 - Agent Ether - Multi-agent coordination protocols (research stage)
 - Semantic Memory - Persistent knowledge substrate (alpha)
 
@@ -152,7 +151,7 @@ reveal your_code.py
 
 **Step 1: Understand SIL's Principles**
 
-Read [SIL Principles](../canonical/SIL_PRINCIPLES.md) (10 minutes). All contributions must follow these 5 design constraints:
+Read [Design Principles](/foundations/design-principles) (10 minutes). All contributions must follow these 5 design constraints:
 1. Clarity - Explicit over implicit
 2. Simplicity - Essential complexity only
 3. Composability - Modules that combine predictably
@@ -161,7 +160,7 @@ Read [SIL Principles](../canonical/SIL_PRINCIPLES.md) (10 minutes). All contribu
 
 **Step 2: Pick a Project**
 
-Browse [Project Index](../innovations/INNOVATIONS.md) and choose based on your interests:
+Browse [Systems Documentation](/systems/) and choose based on your interests:
 - **Code exploration:** reveal
 - **Cross-domain computation:** morphogen
 - **Provenance:** genesisgraph
@@ -237,7 +236,7 @@ Layer 0: Semantic Memory         ← Persistent knowledge graphs
    - Every layer visible and inspectable
    - Progressive disclosure of complexity
 
-**Read more:** [Semantic OS Architecture](../canonical/SIL_SEMANTIC_OS_ARCHITECTURE.md)
+**Read more:** [Semantic OS Architecture](/foundations/SIL_SEMANTIC_OS_ARCHITECTURE)
 
 ---
 
@@ -280,7 +279,7 @@ WaterCycle(
 
 **Status:** Research prototype, not yet production-ready.
 
-**Read more:** [Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md), Section on USIR
+**Read more:** [Technical Charter](/foundations/SIL_TECHNICAL_CHARTER), Section on USIR
 
 ---
 
@@ -314,7 +313,7 @@ WaterCycle(
 - Faster responses (fewer tokens to process)
 - Better results (agents see structure, not walls of text)
 
-**Read more:** [Tools Documentation](../tools/README.md), Economics section
+**Read more:** [Systems Documentation](/systems/), Economics section
 
 ---
 
@@ -336,8 +335,6 @@ WaterCycle(
 - **Glass box AI** - Every reasoning step visible and verifiable
 - **Cross-domain composition** - Tools that work together via shared semantics
 - **Civilization-scale infrastructure** - The "steel" to AI's "wood"
-
-**Read more:** [Research Agenda Year 1](../canonical/SIL_RESEARCH_AGENDA_YEAR1.md)
 
 ---
 
@@ -365,7 +362,7 @@ reveal morphogen/src/core.py Operator
 - [5-minute quickstart](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/blob/main/docs/getting-started/quickstart.md)
 - [Example workflows](https://github.com/Semantic-Infrastructure-Lab/genesisgraph/tree/main/examples)
 
-**All project links:** [Project Index](../innovations/INNOVATIONS.md)
+**All systems:** [Systems Documentation](/systems/)
 
 ---
 
@@ -397,7 +394,7 @@ reveal morphogen/src/core.py Operator
 - **Determinism in the core** (semantic computation)
 - **Provenance everywhere** (track when and why randomness was involved)
 
-**Read more:** [Principles](../canonical/SIL_PRINCIPLES.md) - Reproducibility principle
+**Read more:** [Design Principles](/foundations/design-principles) - Reproducibility principle
 
 ---
 
@@ -406,26 +403,25 @@ reveal morphogen/src/core.py Operator
 **Quick Paths:**
 
 **30-Minute Overview:**
-→ [Start Here](../canonical/START_HERE.md) - Guided tour with hands-on example
+→ [Start Here](/START_HERE.md) - Guided tour with hands-on example
 
 **Deep Architecture:**
-→ [Unified Architecture Guide](../architecture/UNIFIED_ARCHITECTURE_GUIDE.md) (20 min)
-→ [Technical Charter](../canonical/SIL_TECHNICAL_CHARTER.md) (45 min)
+→ [Unified Architecture Guide](/architecture/UNIFIED_ARCHITECTURE_GUIDE) (20 min)
+→ [Technical Charter](/foundations/SIL_TECHNICAL_CHARTER) (45 min)
 
 **Philosophy & Vision:**
-→ [Founder's Letter](../canonical/FOUNDERS_LETTER.md) (10 min)
-→ [Manifesto](../canonical/SIL_MANIFESTO.md) (15 min)
+→ [Founder's Letter](/foundations/FOUNDERS_LETTER) (10 min)
+→ [Manifesto](/manifesto/YOLO) (15 min)
 
 **Choose Your Path:**
 → [Reading Guide](https://github.com/Semantic-Infrastructure-Lab/SIL/blob/main/docs/READING_GUIDE.md) - 4 curated reading paths
 
 **Try Production Tools:**
-→ [Tools Documentation](../tools/README.md)
-→ [Project Index](../innovations/INNOVATIONS.md)
+→ [Systems Documentation](/systems/)
 
 **Research Papers:**
-→ [RAG as Semantic Manifold Transport](../research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT.md)
-→ [Agent-Help Standard](../research/AGENT_HELP_STANDARD.md)
+→ [RAG as Semantic Manifold Transport](/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT)
+→ [Agent-Help Standard](/research/AGENT_HELP_STANDARD)
 
 **Community:**
 → [GitHub Organization](https://github.com/Semantic-Infrastructure-Lab)
