@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 14
+beth_topics:
+  - sil
+  - reveal
+  - beth
+  - progressive-disclosure
+  - knowledge-systems
+---
+
 # Reveal + Beth: Progressive Knowledge Exposure System
 
 **The synergy between structure-first exploration and knowledge graph discovery**

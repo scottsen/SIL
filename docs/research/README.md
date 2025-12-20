@@ -22,6 +22,30 @@ These papers are **working research documents**—they evolve as we implement, t
 
 ## Current Papers
 
+### [Symbolic Computation in the Semantic Infrastructure Lab Stack](/research/SYMBOLIC_COMPUTATION_IN_SIL)
+
+**Authors:** Scott Senkeresty (SIL Founder), TIA (Chief Semantic Agent)
+**Date:** 2025-12-17
+**Status:** Technical Analysis
+**Length:** ~10,000 words
+
+**Abstract:** Comprehensive technical analysis of symbolic computation infrastructure across the SIL ecosystem. Examines how SymPy (Python's symbolic mathematics library) and related technologies are being integrated into Morphogen's hybrid execution engine, the Physics Insights Engine for automated derivation discovery, and distributed constraint solvers across the stack.
+
+**Key Contributions:**
+- Cross-project technology survey (Morphogen, Physics Insights Engine, constraint solvers)
+- Integration patterns for symbolic-numeric hybrid computation
+- Implementation roadmap for SymPy integration (6-9 months)
+- Research implications and novel contributions
+- 80% of required infrastructure already exists in SIL
+
+**Why this matters:** SIL is building semantic infrastructure that reasons about mathematics structurally, not just numerically—enabling glass-box mathematical reasoning, automated physics discovery, and verified multi-domain simulation.
+
+**Related SIL components:** Layer 1 (USIR, Pantheon), Layer 2 (SOG-P, domains), Layer 4 (Morphogen, constraint solvers), Layer 6 (Agent Ether)
+
+**Session provenance:** hidden-titan-1217 (2025-12-17)
+
+---
+
 ### [RAG as Semantic Manifold Transport](/research/RAG_AS_SEMANTIC_MANIFOLD_TRANSPORT)
 
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)

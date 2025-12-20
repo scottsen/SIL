@@ -1,3 +1,13 @@
+---
+tier: 3
+order: 3
+beth_topics:
+  - sil
+  - technical-charter
+  - specification
+  - architecture
+---
+
 SIL Technical Charter (v1)
 
 ---

@@ -1,3 +1,14 @@
+---
+tier: 1
+order: 4
+beth_topics:
+  - sil
+  - principles
+  - architecture
+  - constraints
+  - semantic-os
+---
+
 # **SIL Principles (v1)**
 
 *Durable constraints for building semantic infrastructure.*

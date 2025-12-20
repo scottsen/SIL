@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 9
+beth_topics:
+  - sil
+  - feedback-loops
+  - semantic-systems
+  - research
+  - control-theory
+---
+
 # Semantic Feedback Loops: Closed-Loop Control for Semantic Systems
 
 **Version:** 1.1

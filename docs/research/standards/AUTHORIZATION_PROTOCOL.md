@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 6
+beth_topics:
+  - sil
+  - authorization
+  - protocols
+  - agent-infrastructure
+  - permissions
+---
+
 # Authorization Protocol
 
 > *Permission Model for Multi-Agent Systems*

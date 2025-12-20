@@ -1,3 +1,12 @@
+---
+beth_topics:
+  - sil
+  - agent-learning
+  - multishot
+  - research
+  - founder-note
+---
+
 # Multi-Shot Agent Learning: Why `--agent-help` Changes Everything
 
 **Author:** Scott Senkeresty, Semantic Infrastructure Lab

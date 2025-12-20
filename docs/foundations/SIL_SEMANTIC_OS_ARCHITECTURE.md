@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 1
+beth_topics:
+  - sil
+  - architecture
+  - semantic-os
+  - layers
+  - infrastructure
+---
+
 # SIL Semantic OS Architecture
 
 **Version:** 2.0 (December 2025)

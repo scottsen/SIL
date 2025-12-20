@@ -1,3 +1,12 @@
+---
+beth_topics:
+  - sil
+  - tool-quality
+  - monitoring
+  - introspection
+  - meta-feedback
+---
+
 # SIL Core Principle #10: Tool Introspection & Quality Monitoring
 
 **"Sharpen your chisel before working the wood. Monitor tool effectiveness before trusting results."**

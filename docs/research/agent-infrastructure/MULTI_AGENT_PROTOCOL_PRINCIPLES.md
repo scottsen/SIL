@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 11
+beth_topics:
+  - sil
+  - multi-agent
+  - protocols
+  - research
+  - communication
+---
+
 # Is There a Protocol for Vibe Coding?
 
 **Principles for Multi-Agent Communication in Semantic Systems**

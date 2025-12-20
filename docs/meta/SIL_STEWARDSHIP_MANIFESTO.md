@@ -1,3 +1,13 @@
+---
+tier: 3
+order: 2
+beth_topics:
+  - sil
+  - governance
+  - stewardship
+  - mission
+---
+
 # SIL Stewardship Manifesto
 
 ## Preamble

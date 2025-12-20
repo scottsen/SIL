@@ -1,3 +1,14 @@
+---
+tier: 1
+order: 3
+beth_topics:
+  - sil
+  - founder
+  - mission
+  - transparency
+  - semantic-infrastructure
+---
+
 # **Founder's Letter**
 
 **Semantic Infrastructure Lab (SIL)**

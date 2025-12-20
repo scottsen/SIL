@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 13
+beth_topics:
+  - sil
+  - progressive-disclosure
+  - information-architecture
+  - implementation-guide
+  - reveal
+---
+
 # Progressive Disclosure in SIL
 
 **The art of showing just enough, just when it's needed**

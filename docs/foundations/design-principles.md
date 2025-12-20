@@ -1,3 +1,13 @@
+---
+tier: 3
+order: 4
+beth_topics:
+  - sil
+  - design-principles
+  - architecture
+  - engineering
+---
+
 # SIL Core Principles
 
 **Design Philosophy for Semantic Infrastructure**

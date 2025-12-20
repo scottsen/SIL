@@ -1,3 +1,13 @@
+---
+tier: 1
+order: 1
+beth_topics:
+  - sil
+  - getting-started
+  - documentation
+  - overview
+---
+
 # Welcome to the Semantic Infrastructure Lab
 
 **Start Here** — The single front door to SIL

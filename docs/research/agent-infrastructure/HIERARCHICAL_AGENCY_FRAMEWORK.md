@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 7
+beth_topics:
+  - sil
+  - agency
+  - hierarchy
+  - agent-infrastructure
+  - framework
+---
+
 # The Hierarchy of Agency
 ## A Unified Framework for Human and Artificial Systems
 

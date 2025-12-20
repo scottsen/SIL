@@ -1,3 +1,14 @@
+---
+tier: 1
+order: 5
+beth_topics:
+  - sil
+  - glossary
+  - terminology
+  - definitions
+  - reference
+---
+
 # **SIL Glossary (v2.2)**
 
 **Canonical definitions for the Semantic Operating System and its components.**

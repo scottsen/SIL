@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 5
+beth_topics:
+  - sil
+  - trust
+  - protocols
+  - agent-infrastructure
+  - standards
+---
+
 # Trust Assertion Protocol (TAP)
 
 > *The atomic unit of machine-readable trust*

@@ -1,3 +1,12 @@
+---
+beth_topics:
+  - sil
+  - research
+  - planning
+  - roadmap
+  - semantic-os
+---
+
 SIL Research Agenda & Demonstration Plan (Year 1)
 
 ## 1. Purpose of the Research Agenda

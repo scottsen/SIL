@@ -1,3 +1,14 @@
+---
+tier: 3
+order: 10
+beth_topics:
+  - sil
+  - observability
+  - alignment
+  - research
+  - agent-infrastructure
+---
+
 # Semantic Observability: Automated Detection of Intent-Execution Alignment
 
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)

@@ -1,3 +1,12 @@
+---
+beth_topics:
+  - sil
+  - safety
+  - human-in-the-loop
+  - thresholds
+  - guidelines
+---
+
 # SIL Safety Thresholds & HITL Patterns
 
 **Human-in-the-Loop Guidelines for Autonomous Operations**
