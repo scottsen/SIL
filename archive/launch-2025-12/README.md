@@ -73,6 +73,21 @@ This directory contains planning and review documents from the SIL website launc
 
 ---
 
+### 6. semantic-os-architecture-OLD-MANIFESTO-STYLE.md (Dec 17, 24KB)
+**Purpose:** Old manifesto-style semantic OS architecture document
+**Status:** Superseded by v3.0 Provenance-First architecture
+**Superseded by:** `/docs/foundations/SIL_SEMANTIC_OS_ARCHITECTURE.md` (v3.0, Dec 20)
+
+**Why archived:**
+- Pre-Provenance-First architecture model
+- Manifesto style ("The Semantic Infrastructure Lab Manifesto")
+- No frontmatter (missing beth_topics, tier metadata)
+- Conflicting layer system (vs current 7-layer L0-L6 model)
+
+**Archival date:** 2025-12-20 (voltaic-asteroid-1220)
+
+---
+
 ## Why Archived (Not Deleted)
 
 **Provenance:** These documents show the work that went into the Dec 8 launch.
