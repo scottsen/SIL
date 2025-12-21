@@ -7,13 +7,14 @@ beth_topics:
   - alignment
   - research
   - agent-infrastructure
+architecture_decision: Provenance-First model adopted (Dec 20, 2025)
 ---
 
 # Semantic Observability: Automated Detection of Intent-Execution Alignment
 
 **Authors:** Scott Senkeresty (Chief Architect, Semantic OS), Tia (Chief Semantic Agent)
-**Date:** 2025-12-04 (updated 2025-12-14)
-**Status:** Canonical Document v1.1
+**Date:** 2025-12-04 (updated 2025-12-20)
+**Status:** Canonical Document v1.2
 
 ---
 
@@ -1046,20 +1047,20 @@ class AdaptiveFitnessLearner:
 Layer 6: Intelligence    (Agent Ether, BrowserBridge)
 Layer 5: Intent          (Pantheon validation, feedback loops)
 Layer 4: Dynamics        (Morphogen scheduler, temporal execution)
-Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph)
-Layer 2: Structures      (TiaCAD, GenesisGraph)
+Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph composition)
+Layer 2: Structures      (TiaCAD, GenesisGraph structures)
 Layer 1: Primitives      (Morphogen domains, RiffStack)
-Layer 0: Substrate       (Philbrick hardware)
+Layer 0: Provenance      (GenesisGraph - everything has lineage)
+Layer -1: Substrate      (Philbrick hardware - optional)
 ─────────────────────────────────────────────────────
 Cross-cutting concerns (not layers):
   • OBSERVABILITY (Reveal) ← This document
-  • Provenance (GenesisGraph)
   • Trust (TAP + Authorization)
 ```
 
 **Why observability is cross-cutting, not a layer:**
 
-- **Applies to all layers:** You can inspect L0 hardware, L3 composition, or L6 agents
+- **Applies to all layers:** You can inspect L0 provenance, L3 composition, L6 agents, or L-1 hardware
 - **Implemented by Reveal:** Universal inspection via progressive disclosure
 - **Feeds into Layer 5:** Observability data drives intent-execution alignment (see [SEMANTIC_FEEDBACK_LOOPS.md](./SEMANTIC_FEEDBACK_LOOPS))
 - **No "Layer 4.5" needed:** Cross-cutting concerns span the stack, they don't sit between layers
@@ -1118,12 +1119,13 @@ Cross-cutting concerns (not layers):
 
 ---
 
-**Document Status:** Canonical v1.1
-**Last Updated:** 2025-12-14
+**Document Status:** Canonical v1.2
+**Last Updated:** 2025-12-20
 **Maintainers:** Scott Senkeresty, Tia
 **License:** CC BY 4.0
 
 **Changelog:**
+- 2025-12-20: Updated to Provenance-First architecture model (L0=Provenance, L-1=Substrate optional)
 - 2025-12-14: Reframed observability as cross-cutting concern, aligned layer model
 - 2025-12-04: Initial version based on badero-1204 session insight
 

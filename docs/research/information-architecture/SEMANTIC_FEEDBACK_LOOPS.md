@@ -7,12 +7,13 @@ beth_topics:
   - semantic-systems
   - research
   - control-theory
+architecture_decision: Provenance-First model adopted (Dec 20, 2025)
 ---
 
 # Semantic Feedback Loops: Closed-Loop Control for Semantic Systems
 
-**Version:** 1.1
-**Date:** 2025-12-04
+**Version:** 1.2
+**Date:** 2025-12-20
 **Status:** Canonical - Foundational Theory
 **Related:** Multi-Agent Protocol Principles, Semantic OS Architecture
 
@@ -650,12 +651,13 @@ Best sessions:
 Layer 6: Intelligence    (Agent Ether, BrowserBridge)
 Layer 5: Intent          (Pantheon validation, FEEDBACK LOOPS)  ← This document
 Layer 4: Dynamics        (Morphogen scheduler, temporal execution)
-Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph)
-Layer 2: Structures      (TiaCAD, GenesisGraph)
+Layer 3: Composition     (Pantheon IR, SUP, GenesisGraph composition)
+Layer 2: Structures      (TiaCAD, GenesisGraph structures)
 Layer 1: Primitives      (Morphogen domains, RiffStack)
-Layer 0: Substrate       (Philbrick hardware)
+Layer 0: Provenance      (GenesisGraph - everything has lineage)
+Layer -1: Substrate      (Philbrick hardware - optional)
 ─────────────────────────────────────────────────────
-Cross-cutting: Observability (Reveal), Provenance (GenesisGraph), Trust (TAP)
+Cross-cutting: Observability (Reveal), Trust (TAP + Authorization)
 ```
 
 **Feedback loops live at Layer 5 (Intent)** because they:
@@ -878,11 +880,12 @@ Semantic infrastructure where feedback loops are first-class primitives, fitness
 ---
 
 **Document Status:** Canonical
-**Version:** 1.1
+**Version:** 1.2
 **Author:** Semantic Infrastructure Lab
-**Date:** 2025-12-04 (updated 2025-12-14)
+**Date:** 2025-12-04 (updated 2025-12-20)
 **License:** CC BY 4.0
 
 **Changelog:**
+- 2025-12-20: Updated to Provenance-First architecture model (L0=Provenance, L-1=Substrate optional)
 - 2025-12-14: Aligned layer model with canonical 7-layer Cognitive OSI Stack
 - 2025-12-04: Initial version based on mighty-shaman-1204 session insight
