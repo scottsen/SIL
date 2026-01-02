@@ -1,7 +1,38 @@
 # SIL Project Status
 
-**Last Updated:** 2025-12-20
+**Last Updated:** 2026-01-01
 **Architecture Version:** 3.0 (Provenance-First)
+
+---
+
+## ⚠️ STRATEGIC CROSSROADS (January 2026)
+
+**CRITICAL:** SIL faces a fundamental strategic tension that requires immediate founder review.
+
+**The Problem:**
+- **SIL's approach:** "Building for decades" (10-20 year vision, Q1/Q2 2026 milestones)
+- **AI reality:** AGI estimates 2-7 years (exponential acceleration, $200B/year investment)
+- **Question:** Do these timelines make sense together?
+
+**Three Scenarios:**
+1. **Pre-AGI Sprint:** Race to ship infrastructure before AGI (RADICAL acceleration needed)
+2. **Pattern Documentation:** Tools become obsolete, publish patterns/research instead
+3. **Hedge Both:** Fast critical work + parallel research (moderate risk)
+
+**Current pace (67% invariant enforcement, 30% Layer 1 complete) likely insufficient for Scenario 1.**
+
+**Action Required:**
+- [ ] **Run tests** (January-March 2026) - Progressive disclosure @ scale, regulatory requirements, hierarchical agency value
+- [ ] **Make decision** (End Q1 2026) - Choose Scenario 1, 2, or 3 based on test results
+- [ ] **Execute** - Commit fully to chosen path
+
+**Documents:**
+- **Full Assessment:** `/docs/meta/SIL_AGI_TIMELINE_STRATEGIC_ASSESSMENT.md` (comprehensive analysis)
+- **Quick Reference:** `/docs/meta/AGI_TIMELINE_QUICK_REFERENCE.md` (decision framework)
+
+**Status:** DRAFT - Awaiting founder review and decision
+
+**This is the most important strategic question SIL faces. All other work should be evaluated through this lens.**
 
 ---
 
