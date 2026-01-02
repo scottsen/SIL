@@ -6,6 +6,8 @@
 
 **Latest:** v0.24.0 adds enhanced statistics adapter, code quality metrics, improved error handling, and performance optimizations.
 
+**Coming in v0.26+:** `.reveal.yaml` configuration standard for project-specific semantics (architecture validation, custom patterns, team rules).
+
 ---
 
 ## Quick Start
@@ -317,6 +319,82 @@ reveal .                  # Explore current directory
 **Report issues or contribute:**
 - [GitHub Issues](https://github.com/semantic-infrastructure-lab/reveal/issues)
 - [Contributing Guide](https://github.com/semantic-infrastructure-lab/reveal/blob/main/CONTRIBUTING)
+
+---
+
+## Configuration Philosophy (v0.26+)
+
+### Progressive Configuration Pattern
+
+Reveal implements the **Progressive Configuration Pattern**—a three-level system that scales complexity with project needs:
+
+**Level 1: Zero Config (Intelligent Defaults)**
+```bash
+reveal app.py --check           # Works immediately, no setup
+```
+- Sensible built-in rules (bugs, security, complexity)
+- Works for 80% of projects without configuration
+- Safe defaults based on industry best practices
+
+**Level 2: Project Overrides (`.reveal.yaml`)**
+```yaml
+# .reveal.yaml - Team-shared configuration
+architecture:
+  layers:
+    - name: routes
+      path: app/routes/**
+      cannot_import: [repositories/**]  # Enforce clean architecture
+
+semantic:
+  custom_patterns:
+    - name: uses_stripe_api
+      description: "Track payment code"
+      patterns: ["stripe\\..*\\("]
+```
+- Version-controlled team configuration
+- Declare project-specific architecture rules
+- Define custom semantic patterns
+
+**Level 3: Custom Extensions (`~/.reveal/rules/`)**
+```python
+# ~/.reveal/rules/payment_security.py
+# Organization-wide custom rules
+from reveal.rules import Rule
+
+class PaymentSecurityRule(Rule):
+    name = "track-payments"
+    # ... custom logic
+```
+- Full language power for complex checks
+- Organization-wide standards
+- Auto-discovered plugins
+
+### Configuration as Semantic Contract
+
+Reveal's configuration system treats config files as **executable documentation of project semantics**:
+
+- **Architecture rules** declare layer boundaries (not just document them)
+- **Entry points** teach tools about framework patterns (FastAPI routes, pytest tests)
+- **Custom patterns** codify domain knowledge (e.g., "what touches our payment API?")
+- **Quality rules** enforce team standards (different rules for different layers)
+
+**Example: Queryable Domain Knowledge**
+```yaml
+semantic:
+  custom_patterns:
+    - name: uses_email
+      patterns: ["send.*email", "EmailMessage"]
+```
+
+```bash
+reveal 'semantic://app?uses_email'    # Query your domain semantics
+```
+
+**Research context:** This demonstrates SIL's principle "Meaning Must Be Explicit"—configuration declares what code _means_ in your system, not just how to analyze it.
+
+**Documentation:**
+- Research essay: [Configuration as Semantic Contract](/research/information-architecture/CONFIGURATION_AS_SEMANTIC_CONTRACT)
+- Technical note: [Progressive Configuration Pattern](/research/information-architecture/PROGRESSIVE_CONFIGURATION_PATTERN)
 
 ---
 

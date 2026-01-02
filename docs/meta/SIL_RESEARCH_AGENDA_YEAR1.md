@@ -594,11 +594,24 @@ SIL publishes formal research papers on semantic infrastructure problems. These 
   - Provides distortion metrics and alignment strategies for semantic memory queries
   - Connection to Year 1 work: Section 4 (Semantic Memory), Section 6.4 (Code understanding domain)
 
+- **Configuration as Semantic Contract** (`docs/research/information-architecture/CONFIGURATION_AS_SEMANTIC_CONTRACT.md`)
+  - Argues configuration files should declare project semantics, not just tune behavior
+  - Demonstrates how Reveal's `.reveal.yaml` embodies "Meaning Must Be Explicit" principle
+  - Connects configuration to Tool Behavior Contracts and multi-agent protocols
+  - Connection to Year 1 work: Section 7 (Agent Orchestration), Layer 5 (Human Interfaces)
+
+- **Progressive Configuration Pattern** (`docs/research/information-architecture/PROGRESSIVE_CONFIGURATION_PATTERN.md`)
+  - Solves binary choice problem: zero config vs configure everything
+  - Three-level system: intelligent defaults → project overrides → custom extensions
+  - Applies progressive disclosure pattern to tool complexity
+  - Connection to Year 1 work: Layer 5 (Human Interfaces), agent tooling standards
+
 **Future Papers** (planned):
 
 - Universal Semantic IR specification and cross-domain invariants (USIR)
 - Provenance manifolds in multi-agent systems
 - Deterministic scheduling in cross-domain computation
 - Microkernel architecture for semantic queries
+- Configuration as trust assertion (capability requirements in config)
 
 See `docs/research/` for full catalog and technical details.
